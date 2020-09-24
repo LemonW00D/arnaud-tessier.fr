@@ -1,0 +1,79 @@
+$background-light: #F0F2F5;
+$dark-blue: #072939;
+$yellow: #C2A40E;
+$yellow-10: #EBEADE;
+$shadow-card: 0 20px 25px -15px $dark-blue;
+$text-white: #FFFFFF;
+$background-darkmode: rgba(7, 41, 57, .95);
+
+
+
+
+$background-dark: #353535;
+$dark: #111;
+$gray: #ddd;
+$gray-light: #eee;
+$gray-hint: #555;
+$light-primary: rgba(27, 25, 67, 0.3);
+$primary-text: #212121;
+$secondary-text: #757575;
+$red: #be2529;
+$light-blue: #90cef1;
+$green: #029946;
+
+$box-shadow-card: 0 20px 25px -15px $light-primary;
+$box-shadow: inset 0 -1px 3px 1px rgba(0,0,0,.05);
+$text-shadow: 2px 2px 2px $dark;
+$title-shadow: 1px 1px 1px $dark-blue;
+
+$border-card: 1px solid $gray;
+
+
+
+.fancy {
+    margin: 2rem auto 1rem auto;
+    border: 2px solid $dark-blue;
+    background-color: $dark-blue;
+    color: $text-white;
+    font-size: 1.75rem;                  
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.fancy span {
+    width: 72%;
+    left: 0px;
+    text-align: start;
+}
+
+.fancy:hover span {
+    left: -72%;
+    right: 100%;
+    width: 0px;
+    white-space: nowrap;
+    transition: all 400ms ease-in-out 175ms;
+}
+  
+.fancy .icon-send {
+    text-align: center;
+    padding: 0.1rem 0;
+    right: 0;
+    width: 28%;
+    background-color: $dark-blue;
+}
+  
+.fancy:hover .icon-send {
+    right: 0;
+    left: 0;
+    width: 100%;
+    transition: all 400ms ease-in-out 175ms;
+}
+
+.fancy:focus {
+    opacity: 0.90;
+}

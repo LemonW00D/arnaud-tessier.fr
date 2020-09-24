@@ -1,32 +1,67 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="app" :class="mode">
+    <preloader></preloader>
+    <div class="d-flex flex-column w-100">
+      <the-header @toggle="toggle"></the-header>
+      <router-view></router-view>
     </div>
-    <router-view />
   </div>
 </template>
 
+<script>
+import Preloader from "@/components/Preloader";
+import TheHeader from "@/components/TheHeader";
+
+export default {
+  name: "App",
+  components: {
+    Preloader,
+    TheHeader
+  },
+  /*methods:{
+    keyPress (e) {
+      if (e.key === 't') {
+        this.toggle()
+      }
+    },
+    toggle () {
+      if (this.mode === "dark") {
+        this.mode = "light"
+      } else {
+        this.mode = "dark"
+      }
+    }
+  },
+  created () {
+    window.addEventListener('keyup', this.keyPress)
+  },*/
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "@/assets/scss/style.main.scss";
+
+*{
+  font-family: 'Poppins', sans-serif;
 }
 
-#nav {
-  padding: 30px;
+.app {
+  background-color: $background-light;
+  transition: background-color 0.3s ease-in-out;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+/*
+.dark {
+  background-color: $background-darkmode;  
+}*/
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+/* Scroll-Bar */
+::-webkit-scrollbar {
+    width: 0rem;
 }
 </style>
