@@ -62,6 +62,21 @@ export default {
 
 /* Scroll-Bar */
 ::-webkit-scrollbar {
-    width: 0rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  -webkit-box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>

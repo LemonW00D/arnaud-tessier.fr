@@ -328,6 +328,11 @@ développeur Front-End !`,
       display: none;
     }
   }
+  .contact-button{
+    span{
+      top: 10px !important;
+    }
+  }
 }
 
 @include sm {

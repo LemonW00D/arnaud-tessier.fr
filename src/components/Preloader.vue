@@ -45,10 +45,10 @@ export default {
     justify-content: center;
     position: absolute;
     width: 100vw;
-    height: 125vh;
+    height: 150vh;
     background-color: $dark-blue;
     z-index: 9999;
-    margin-top: -10rem;
+    margin-top: -20rem;
 
     .logo{
         width: 300px;
@@ -62,6 +62,12 @@ export default {
         margin-top: 3rem;
         background-color: $dark-blue;
         text-align: center;
+    }
+
+    @include xs{
+        p{
+            font-size: 1.8rem;
+        }
     }
 
     .balls{

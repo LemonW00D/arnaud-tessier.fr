@@ -67,6 +67,10 @@
           ><i class="fab fa-instagram-square"></i
         ></a>
       </div>
+
+      <div>
+        <p class="horaires"><span class="underL">Horaires:</span><span> du</span> Lundi <span>au</span> Vendredi, <span>de</span> 09H00 <span>à</span> 18H00</p>
+      </div>
       </div>
     </section>
     
@@ -408,6 +412,23 @@ a {
 
 hr{
   margin: 7rem 0 4rem;
+}
+
+.horaires{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  .underL{
+    text-decoration: underline;
+    font-style: initial;
+    font-weight: bold;
+  }
+
+  span{
+    font-style: italic;
+    font-weight: 400;
+  }
 }
 
 @include xs {

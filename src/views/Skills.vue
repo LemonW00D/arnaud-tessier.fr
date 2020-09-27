@@ -1,6 +1,9 @@
 <template>
 <div class="d-flex flex-row justify-content-center align-items-center px-5" style="padding-top: 6rem">
 <p>hello skills</p>
+<div class="download">
+  <a download="Arnaud_TESSIER_CV.pdf" href="@/src/assets/docs/Arnaud_TESSIER_CV.pdf" target="_blank" rel="external nofollow noreferrer noopener" title="Mon CV en pdf" role="link" aria-pressed="false">télécharger mon cv</a>
+</div>
 </div>
 </template>
 
@@ -28,80 +31,100 @@ export default {
 @import "@/assets/scss/_variables.scss";
 @import "@/assets/scss/_responsive.scss";
 
-#contact-me{
-  &:hover{
-      span {
-        display: none;
-      }
-    &:hover:before {
-      content:"CONTACT ME";
-      color: $yellow;
-      text-shadow: 2px 2px 2px $dark-blue;
+.download {
+  position: relative;
+  margin: 2.5rem auto 0;
+  top: -125px;
+  left: -200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 5px;
+
+  a{
+    text-transform: uppercase;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    padding: 4rem 0;
+    border-radius: 5px;
+    font-size: 1.15rem !important;
+    
+    &:after {
+      transition: 0.3s all ease;
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 5px;
+      border: 3px solid #B15947;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      border-radius: 3px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background-color:#fff;
+      border-radius: 5px;
+      z-index: -1;
+    }
+
+    &:hover {
+      &:after {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
       }
     }
-}
-#found-me{
-  &:hover{
-      span {
-        display: none;
+
+    &:active {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      &:before {
+        background-color: #f1481b;
       }
-    &:hover:before {
-      content:"FOUND ME";
-      color: $yellow;
-      text-shadow: 2px 2px 2px $dark-blue;
-      }
-    }
-}
-#adresse{
-  &:hover{
-      span {
-        display: none;
-      }
-    &:hover:before {
-      content:"Location";
-      color: $dark-blue;
+      &:after {
+        border-color: #f1481b;
+        border-radius: 5px;
       }
     }
-}
-#phone{
-  &:hover{
-      span {
-        display: none;
-      }
-    &:hover:before {
-      content:"Phone";
-      color: $dark-blue;
-      }
-    }
-}
-#mail{
-  &:hover{
-      span {
-        display: none;
-      }
-    &:hover:before {
-      content:"Email";
-      color: $dark-blue;
-      }
-    }
+  }
 }
 
 
-
-
-@include xs {
-
+@include xxl {
+  
 }
-
-@include sm {
-
+@include xl {
+  
 }
-
 @include md {
-
+  
 }
-
-@include xl{
-
+@include sm {
+  .download{
+    a{
+      margin-left: 10rem;
+    }
+  }
+}
+@include xs {
+  .download{
+    position: static !important;
+    a{
+      margin: auto;
+    }
+  }
 }
 </style>

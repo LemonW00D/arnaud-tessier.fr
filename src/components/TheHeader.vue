@@ -76,8 +76,12 @@ nav {
   z-index: 999;
 }
 
-img{
+.logo{
   height:50px;
+  &:hover{
+    animation: jello;
+    animation-duration: 1s;
+  }
 }
 
 .navbar-collapse, ul, li, .nav-link, span, .navbar-toggler{
