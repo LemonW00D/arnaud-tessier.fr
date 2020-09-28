@@ -1,9 +1,9 @@
 <template>
   <div class="toggle-wrapper">
     <label class="toggle">
-      <input 
-        type="checkbox" 
-        :checked="(mode === 'dark') ? 'checked' : false" 
+      <input
+        type="checkbox"
+        :checked="mode === 'dark' ? 'checked' : false"
         @change="$emit('toggle')"
       />
       <span class="toggler round"></span>
@@ -12,11 +12,9 @@
 </template>
 
 <script>
-
 export default {
-  props: ['mode'],
-}
-
+  props: ["mode"]
+};
 </script>
 
 <style lang="scss">
@@ -44,7 +42,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #57C4DE;
+  background: #57c4de;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -56,14 +54,16 @@ export default {
   width: 24px;
   left: 3px;
   bottom: 0.35rem;
-  background: #FFF;
-  box-shadow: 0 0 0.25em 0.0625em #fbee8d, 0 0 2em 0 #FFEB3B, inset -0.25em -0.25em 0 0 #fbee8e, inset -0.3125em -0.3125em 0 0.625em #fff5b2;
+  background: #fff;
+  box-shadow: 0 0 0.25em 0.0625em #fbee8d, 0 0 2em 0 #ffeb3b,
+    inset -0.25em -0.25em 0 0 #fbee8e,
+    inset -0.3125em -0.3125em 0 0.625em #fff5b2;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .toggler {
-  background-color: #21256D;
+  background-color: #21256d;
 }
 
 input:checked + .toggler:before {
@@ -71,7 +71,8 @@ input:checked + .toggler:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
   background: transparent;
-  box-shadow: inset -0.1875rem -0.1875rem 0 0 #fbe7ef, inset -0.5625rem -0.5625rem 0 0 #fffff7;
+  box-shadow: inset -0.1875rem -0.1875rem 0 0 #fbe7ef,
+    inset -0.5625rem -0.5625rem 0 0 #fffff7;
 }
 
 .toggler.round {
@@ -82,4 +83,3 @@ input:checked + .toggler:before {
   border-radius: 50%;
 }
 </style>
-

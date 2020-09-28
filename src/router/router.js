@@ -9,10 +9,6 @@ import Works from "@/views/Works";
 import Prices from "@/views/Prices";
 import Contact from "@/views/Contact";
 
-
-
-
-
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -27,7 +23,7 @@ const router = new VueRouter({
     { path: "/contact", name: "Contact", component: Contact },
     { path: "**", redirect: "/home" },
     { path: "*", redirect: "/home" },
-    { path: "", redirect: "/home" },
+    { path: "", redirect: "/home" }
   ]
 });
 

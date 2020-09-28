@@ -1,30 +1,33 @@
 <template>
-<div class="d-flex flex-row justify-content-center align-items-center px-5" style="padding-top: 6rem">
-<p>hello skills</p>
-<div class="download">
-  <a download="Arnaud_TESSIER_CV.pdf" href="Arnaud_TESSIER_CV.pdf" target="_blank" rel="external nofollow noreferrer noopener" title="Mon CV en pdf" role="link" aria-pressed="false">télécharger mon cv</a>
-</div>
-</div>
+  <div
+    class="d-flex flex-row justify-content-center align-items-center px-5"
+    style="padding-top: 6rem"
+  >
+    <p>hello skills</p>
+    <div class="download">
+      <a
+        download="Arnaud_TESSIER_CV.pdf"
+        href="Arnaud_TESSIER_CV.pdf"
+        target="_blank"
+        rel="external nofollow noreferrer noopener"
+        title="Mon CV en pdf"
+        role="link"
+        aria-pressed="false"
+        >télécharger mon cv</a
+      >
+    </div>
+  </div>
 </template>
 
 <script>
-
-
-
 export default {
   name: "Skills",
-  components:{
-
-  },
+  components: {},
   data() {
-    return {
-      
-    }
+    return {};
   },
-  methods: {
-   
-  },
-}
+  methods: {}
+};
 </script>
 
 <style lang="scss">
@@ -36,12 +39,12 @@ export default {
   margin: 2.5rem auto 0;
   top: -125px;
   left: -200px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
 
-  a{
+  a {
     text-transform: uppercase;
     text-align: center;
     width: 110px;
@@ -53,21 +56,21 @@ export default {
     padding: 4rem 0;
     border-radius: 5px;
     font-size: 1.15rem !important;
-    
+
     &:after {
       transition: 0.3s all ease;
-      content:'';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
       right: 0;
       border-radius: 5px;
-      border: 3px solid #B15947;
+      border: 3px solid #b15947;
     }
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       border-radius: 3px;
       left: 0;
@@ -76,7 +79,7 @@ export default {
       right: 0;
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
-      background-color:#fff;
+      background-color: #fff;
       border-radius: 5px;
       z-index: -1;
     }
@@ -102,27 +105,23 @@ export default {
   }
 }
 
-
 @include xxl {
-  
 }
 @include xl {
-  
 }
 @include md {
-  
 }
 @include sm {
-  .download{
-    a{
+  .download {
+    a {
       margin-left: 10rem;
     }
   }
 }
 @include xs {
-  .download{
+  .download {
     position: static !important;
-    a{
+    a {
       margin: auto;
     }
   }

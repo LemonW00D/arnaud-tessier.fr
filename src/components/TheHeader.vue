@@ -1,41 +1,59 @@
 <template>
   <div>
-  <transition name="nav-top" appear>
-    <nav class="navbar navbar-expand-md">
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <img src="@/assets/img/logo-AT.png" alt="Arnaud Tessier" class="logo">
-      </div>
-      <button class="navbar-toggler navbar-light w-50">
-        <span
-          class="navbar-toggler-icon"
-          v-trigger-collapse="'collapse'"
-        ></span>
-      </button>
-      <div id="collapse" class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item mx-2">
-            <router-link class="nav-link white" to="/home" id="home"><span>accueil</span></router-link>
-          </li>
-          <li class="nav-item mx-2">
-            <router-link class="nav-link white" to="/about" id="about"><span>à propos</span></router-link>
-          </li>
-          <li class="nav-item mx-2">
-            <router-link class="nav-link white" to="/skills" id="skills"><span>compétences</span></router-link>
-          </li>    
-          <li class="nav-item mx-2">
-            <router-link class="nav-link white" to="/works" id="works"><span>portfolio</span></router-link>
-          </li> 
-          <li class="nav-item mx-2">
-            <router-link class="nav-link white" to="/prices" id="prices"><span>tarifs</span></router-link>
-          </li>          
-          <li class="nav-item mx-2">
-            <router-link class="nav-link white" to="/contact" id="contact"><span>contact</span></router-link>
-          </li>
-        </ul>
-      </div>
-      <!-- <Toggle @toggle="$emit('toggle')" /> -->
-    </nav>
-  </transition>
+    <transition name="nav-top" appear>
+      <nav class="navbar navbar-expand-md">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            src="@/assets/img/logo-AT.png"
+            alt="Arnaud Tessier"
+            class="logo"
+          />
+        </div>
+        <button class="navbar-toggler navbar-light w-50">
+          <span
+            class="navbar-toggler-icon"
+            v-trigger-collapse="'collapse'"
+          ></span>
+        </button>
+        <div id="collapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2">
+              <router-link class="nav-link white" to="/home" id="home"
+                ><span>accueil</span></router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link class="nav-link white" to="/about" id="about"
+                ><span>à propos</span></router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link class="nav-link white" to="/skills" id="skills"
+                ><span>compétences</span></router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link class="nav-link white" to="/works" id="works"
+                ><span>portfolio</span></router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link class="nav-link white" to="/prices" id="prices"
+                ><span>tarifs</span></router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link class="nav-link white" to="/contact" id="contact"
+                ><span>contact</span></router-link
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- <Toggle @toggle="$emit('toggle')" /> -->
+      </nav>
+    </transition>
   </div>
 </template>
 
@@ -60,7 +78,7 @@ export default {
         });
       }
     }
-  },/*
+  } /*
   components: {
     Toggle,
   },*/
@@ -73,25 +91,30 @@ export default {
 nav {
   padding: 0.5rem 1rem;
   background: $dark-blue;
-  z-index: 999;
+  z-index: 99999;
 }
 
-.logo{
-  height:50px;
-  &:hover{
+.logo {
+  height: 50px;
+  &:hover {
     animation: jello;
     animation-duration: 1s;
   }
 }
 
-.navbar-collapse, ul, li, .nav-link, span, .navbar-toggler{
+.navbar-collapse,
+ul,
+li,
+.nav-link,
+span,
+.navbar-toggler {
   background-color: $dark-blue;
 }
 
-.nav-link{
+.nav-link {
   text-transform: uppercase;
   text-align: center;
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 }
@@ -118,12 +141,12 @@ li {
   line-height: 2.1rem;
 }
 
-span{  
+span {
   font-weight: 400;
 }
 
-.navbar-toggler-icon{
-  background-color:$dark-blue;
+.navbar-toggler-icon {
+  background-color: $dark-blue;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   font-size: 1.5rem;
 }
@@ -133,68 +156,68 @@ span{
   margin: 0;
 }
 
-#home{
-  &:hover{
+#home {
+  &:hover {
     span {
       display: none;
     }
-  &:hover:before {
-    content:"HOME";
-    color: $yellow;
-    }
-  }
-}
-#about{
-  &:hover{
-    span {
-      display: none;
-    }
-  &:hover:before {
-    content:"ABOUT";
+    &:hover:before {
+      content: "HOME";
       color: $yellow;
     }
   }
 }
-#skills{
-  &:hover{
+#about {
+  &:hover {
     span {
       display: none;
     }
-  &:hover:before {
-    content:"skills";
+    &:hover:before {
+      content: "ABOUT";
       color: $yellow;
     }
   }
 }
-#works{
-  &:hover{
+#skills {
+  &:hover {
     span {
       display: none;
     }
-  &:hover:before {
-    content:"works";
+    &:hover:before {
+      content: "skills";
       color: $yellow;
     }
   }
 }
-#prices{
-  &:hover{
+#works {
+  &:hover {
     span {
       display: none;
     }
-  &:hover:before {
-    content:"prices";
+    &:hover:before {
+      content: "works";
       color: $yellow;
     }
   }
 }
-#contact{
-  &:hover{
+#prices {
+  &:hover {
     span {
       display: none;
     }
-  &:hover:before {
-    content:"get in touch";
+    &:hover:before {
+      content: "prices";
+      color: $yellow;
+    }
+  }
+}
+#contact {
+  &:hover {
+    span {
+      display: none;
+    }
+    &:hover:before {
+      content: "get in touch";
       color: $yellow;
     }
   }
@@ -226,7 +249,7 @@ span{
     margin: 0 auto;
     content: "";
   }
-  span{
+  span {
     font-weight: bold;
     color: $yellow;
   }
