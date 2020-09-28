@@ -52,7 +52,7 @@
         <img src="@/assets/img/timeline.png">
       </div>
       <div class="dwnld-btn">
-        <a download="Arnaud_TESSIER_CV.pdf" href="@/assets/docs/Arnaud_TESSIER_CV.pdf" target="_blank" rel="external nofollow noreferrer noopener" title="Mon CV en pdf" role="link" aria-pressed="false">
+        <a download="Arnaud_TESSIER_CV.pdf" href="Arnaud_TESSIER_CV.pdf" target="_blank" rel="external nofollow noreferrer noopener" title="Mon CV en pdf" role="link" aria-pressed="false">
         <button class="continue-application">
         <div>
           <div class="pencil"></div>

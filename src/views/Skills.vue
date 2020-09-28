@@ -2,7 +2,7 @@
 <div class="d-flex flex-row justify-content-center align-items-center px-5" style="padding-top: 6rem">
 <p>hello skills</p>
 <div class="download">
-  <a download="Arnaud_TESSIER_CV.pdf" href="@/src/assets/docs/Arnaud_TESSIER_CV.pdf" target="_blank" rel="external nofollow noreferrer noopener" title="Mon CV en pdf" role="link" aria-pressed="false">télécharger mon cv</a>
+  <a download="Arnaud_TESSIER_CV.pdf" href="Arnaud_TESSIER_CV.pdf" target="_blank" rel="external nofollow noreferrer noopener" title="Mon CV en pdf" role="link" aria-pressed="false">télécharger mon cv</a>
 </div>
 </div>
 </template>

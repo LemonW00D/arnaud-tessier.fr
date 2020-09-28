@@ -75,7 +75,7 @@
 						<li class="techno">
 							<span><b>SUR-MESURE</b></span>
               <br>
-              <span class="sub">(Codage manuel - voir mes <a href="http://localhost:8080/#/skills">compétences</a>)</span>
+              <span class="sub">(Codage manuel - voir mes <router-link to="/skills">compétences</router-link>)</span>
 						</li>
 						<li class="row-alt d-flex flex-row">
 							<div><i class="fas fa-caret-right" aria-hidden="true"></i></div>
@@ -434,7 +434,7 @@ export default {
     padding: 0;
     padding-right: 0.5rem;
 
-    a{
+    router-link{
       font-size: 1.2rem;
       display: inline-block;
       text-decoration: underline;
