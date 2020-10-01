@@ -1,28 +1,264 @@
 <template>
-  <div
-    class="d-flex flex-row justify-content-center align-items-center px-5"
-    style="padding-top: 6rem"
-  >
-    <p>hello skills</p>
-    <div class="download">
-      <a
-        download="Arnaud_TESSIER_CV.pdf"
-        href="Arnaud_TESSIER_CV.pdf"
-        target="_blank"
-        rel="external nofollow noreferrer noopener"
-        title="Mon CV en pdf"
-        role="link"
-        aria-pressed="false"
-        >télécharger mon cv</a
-      >
+  <div class="skills-page">
+    <div class="skills">
+        <ul class="lines">
+          <li class="line l--0">
+            <span class="line__label title">
+              Connaissance:
+            </span>
+          </li>
+          <li class="line l--25">
+            <span class="line__label l1">
+              Bases
+            </span>
+          </li>
+          <li class="line l--50">
+            <span class="line__label l2">
+              Intermédiaire
+            </span>
+          </li>
+          <li class="line l--75">
+            <span class="line__label l1">
+              Maitrise
+            </span>
+          </li>
+          <li class="line l--100">
+            <span class="line__label l2">
+              Expert
+            </span>
+          </li>
+        </ul>
+        
+        <div class="charts">
+          <div class="chart chart--dev">
+            <span class="chart__title">Développement</span>
+            <ul class="chart--horiz">
+              <li class="chart__bar" style="width: 95%;" id="html">
+                <span class="chart__label">
+                  HTML5
+                  <img src="@/assets/img/html5.png" alt="html">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="html" triggers="hover" placement="left">
+                 Langage de balisage conçu pour représenter les pages web.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 85%;" id="css">
+                <span class="chart__label">
+                  CSS3
+                  <img src="@/assets/img/css3.png" alt="css">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="css" triggers="hover" placement="left">
+                 Langage de stylisation conçu pour présenter des documents HTML.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 70%;" id="sass">
+                <span class="chart__label">
+                  Sass
+                  <img src="@/assets/img/sass.png" alt="sass" style="background-color: #eee">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="sass" triggers="hover" placement="left">
+                 Préprocesseur CSS.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 70%;" id="bootstrap">
+                <span class="chart__label">
+                  Bootstrap
+                  <img src="@/assets/img/bootstrap.png" alt="bootstrap">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="bootstrap" triggers="hover" placement="left">
+                 Framework HTML - CSS.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 50%;" id="javascript">
+                <span class="chart__label">
+                  JavaScript ES6
+                  <img src="@/assets/img/javascript.png" alt="javascript">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="javascript" triggers="hover" placement="left">
+                  Langage de programmation de scripts pour des pages web interactives.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 50%;" id="webpack">
+                <span class="chart__label">
+                  Webpack + Babel
+                  <img src="@/assets/img/webpack.png" alt="webpack">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="webpack" triggers="hover" placement="left">
+                  Bundler de modules JavaScript et (rétro-)compatibilité.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 65%;" id="jquery">
+                <span class="chart__label">
+                  jQuery
+                  <img src="@/assets/img/jquery.png" alt="jquery" style="width: 18px; height: 18px">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="jquery" triggers="hover" placement="left">
+                   Bibliothèque JavaScript pour les animations.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 75%;" id="vuejs">
+                <span class="chart__label">
+                  Vue.js
+                  <img src="@/assets/img/vuejs.png" alt="vuejs">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="vuejs" triggers="hover" placement="left">
+                Framework JavaScript pour construire des interfaces utilisateur et des applications web monopages.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 75%;" id="bootstrap-vue">
+                <span class="chart__label">
+                  Bootstrap-vue
+                  <img src="@/assets/img/bootstrap-vue.png" alt="bootstrap-vue">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="bootstrap-vue" triggers="hover" placement="left">
+                Framework Vue.js.
+              </b-tooltip>
+              <li class="chart__bar" style="width: 60%;" id="wordpress">
+                <span class="chart__label">
+                  Wordpress
+                  <img src="@/assets/img/wordpress.png" alt="wordpress">
+                </span>
+              </li>
+              <b-tooltip custom-class="custom-tooltip" target="wordpress" triggers="hover" placement="left">
+                Système de gestion de contenu permettant de créer et gérer différents types de sites Web (vitrine, e-commerce...).
+              </b-tooltip>
+            </ul>
+          </div>
+          
+          <div class="chart chart--prod">
+            <span class="chart__title">Productivité</span>
+            <ul class="chart--horiz">
+            <li class="chart__bar" style="width: 60%;" id="git">
+              <span class="chart__label">
+                Git + Github
+                <img src="@/assets/img/github.png" alt="github">
+              </span>
+            </li>
+            <b-tooltip custom-class="custom-tooltip" target="git" triggers="hover" placement="left">
+                Logiciel de gestion de versions décentralisé et service d'hébergement.
+              </b-tooltip>
+            <li class="chart__bar" style="width: 90%;" id="microsoft">
+              <span class="chart__label">
+                Microsoft Office
+                <img src="@/assets/img/microsoft.png" alt="microsoft">
+              </span>
+            </li>
+            <b-tooltip custom-class="custom-tooltip" target="microsoft" triggers="hover" placement="left">
+                Suite bureautique.
+              </b-tooltip>
+          </ul>
+          </div>
+          
+          <div class="chart chart--design">
+            <span class="chart__title">Design</span>
+            <ul class="chart--horiz">
+            <li class="chart__bar" style="width: 40%;" id="lunacy">
+              <span class="chart__label">
+                Lunacy
+                <img src="@/assets/img/lunacy.png" alt="lunacy">
+              </span>
+            </li>
+            <b-tooltip custom-class="custom-tooltip" target="lunacy" triggers="hover" placement="left">
+                Logiciel de conception graphique avec actifs intégrés.
+              </b-tooltip>
+            <li class="chart__bar" style="width: 75%;" id="ux">
+              <span class="chart__label">
+                User Experience
+                <img src="@/assets/img/ux.png" alt="ux">
+              </span>
+            </li>
+            <b-tooltip custom-class="custom-tooltip" target="ux" triggers="hover" placement="left">
+                Qualité du vécu de l'utilisateur face à des environnements numériques (ergonomie et utilisabilité).
+              </b-tooltip>
+          </ul>
+          </div>
+        </div>
+      </div>
+    
+    <div class="d-flex flex-column justify-content-center">
+      <div class="cv-download" style="margin: auto">
+        <a
+          download="Arnaud_TESSIER_CV.pdf"
+          href="Arnaud_TESSIER_CV.pdf"
+          target="_blank"
+          rel="external nofollow noreferrer noopener"
+          title="Mon CV en pdf"
+          role="link"
+          aria-pressed="false"
+          >télécharger mon cv</a>
+        <br>
+      </div>
+      <div class="formations-links">
+        <h5>Certifications :</h5>  
+        <a href="https://www.codecademy.com/profiles/LemonW00D" target="_blank">Codecademy</a>
+        <a href="https://dyma.fr/developer/5e4cfe9660a2e83ad0ddd6b2" target="_blank">Dyma</a>
+      </div>
     </div>
+
+    <div class="competences">									
+				<h4>Domaines de compétences</h4>
+				<ul class="list-unstyled list">
+					<li>
+						<strong>Gestion de projets web</strong>
+						<br>
+						<em>Site vitrine, corporate, évènementiel, e-commerce, intranet, application mobile.</em>
+					</li>
+					<li>
+						<strong>Conception graphique &amp; Webdesign</strong>
+						<br>
+						<em>Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...</em>											
+					</li>
+					<li>
+						<strong>Applications spécifiques et Interface d'administration</strong>
+						<br>
+						<abbr title="Hypertext Preprocessor">PHP</abbr> - <abbr title="My Structured Query Language">MySQL</abbr> - <abbr title="Asynchronous JavaScript and XML">AJAX</abbr> / 
+						<abbr title="Active Server Pages">ASP</abbr>.NET - <abbr title="C Sharp">C#</abbr> - <abbr title="Structured Query Language">SQL</abbr>											
+					</li>
+					<li>
+						<strong>Mise en place / Modification / Gestion de <abbr title="Content Management System">CMS</abbr></strong> 
+						<br>
+						<em>Wordpress, Joomla, Prestashop, phpBB, IPBoard</em>											
+					</li>
+					<li>
+						<strong> Intégration <abbr title="(eXtensible) HyperText Markup Language">(X)HTML</abbr> / <abbr title="Cascading Style Sheets">CSS</abbr></strong>
+						<br>
+						<em>Codage à la main respectueux des standards du Web</em>
+					</li>
+					<li>
+						<strong>Dynamise des pages par <abbr title="Langage de développement web orienté client">JavaScript</abbr> / <abbr title="Asynchronous JavaScript and XML">AJAX</abbr></strong> 
+						<br>
+						<em>jQuery, Prototype, Mootools, Scriptaculous</em>
+					</li>
+					<li>
+						<strong>Validation <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Accessibility Initiative">WAI</abbr> &amp; référencement naturel <abbr title="Search Engine Optimisation">SEO</abbr></strong>
+						<br>
+						<em>Accessibilité &amp; ergonomie des pages web</em>											
+					</li>
+					<li>
+						<strong>Conception multi-plateformes</strong>
+						<br>
+						<em>Compatible tous supports, tablette &amp; application mobile</em>
+					</li>
+				</ul>
+			</div>
+
+
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue);
+import { BTooltip } from 'bootstrap-vue';
+
 export default {
   name: "Skills",
-  components: {},
+  components: {
+    BTooltip,
+  },
   data() {
     return {};
   },
@@ -34,11 +270,178 @@ export default {
 @import "@/assets/scss/_variables.scss";
 @import "@/assets/scss/_responsive.scss";
 
-.download {
+.skills-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+@mixin stagger-anim-delay($i, $initial-delay, $stagger-delay) {
+  @while $i > 0 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: $initial-delay + $stagger-delay * $i;
+    }
+    $i: $i - 1;
+  }
+}
+
+$baseFontSize: 16px;
+$baseLineHeight: 1;
+
+$chartGap: 20px;
+$chartCount: 3;
+$chartOneCount: 10;
+$chartTwoCount: 2;
+$chartThreeCount: 2;
+$totalChartCount: $chartOneCount + $chartTwoCount + $chartThreeCount;
+
+$titleGap: 20px;
+$titleHeight: $baseFontSize * $baseLineHeight + $titleGap;
+
+$chartBarHeight: 30px;
+$chartBarGap: 10px;
+
+.skills {
+  width: 60%;
+  max-width: 625px;
+  height: 780px;
+  height: $totalChartCount * ($chartBarHeight + $chartBarGap) + ($chartCount * ($chartGap + $titleHeight));
+  margin: auto auto auto 22rem;
   position: relative;
-  margin: 2.5rem auto 0;
-  top: -125px;
-  left: -200px;
+}
+
+.lines {
+  height: 100%;
+  position: relative;
+}
+.line {
+  height: inherit;
+  width: 2px;
+  position: absolute;
+  background: rgba(#ddd, 0.6);
+
+  &.l--0 {
+    left: 0;
+  }
+  &.l--25 {
+    left: 25%;
+  }
+  &.l--50 {
+    left: 50%;
+  }
+  &.l--75 {
+    left: 75%;
+  }
+  &.l--100 {
+    left: calc(100% - 1px);
+  }
+}
+.line__label {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  right: -50px;
+
+  &.title {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.charts {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.chart {
+  &:not(:first-child) {
+    margin-top: $chartGap;
+  }
+}
+
+.chart__title {
+  display: block;
+  margin: 0 0 10px;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+
+  .chart--dev & {}
+  .chart--prod & {
+    animation-delay: 3.3s;
+  }
+  .chart--design & {
+    animation-delay: 4.5s;
+  }
+}
+
+.chart--horiz {
+  overflow: hidden;
+}
+
+.custom-tooltip{
+  font-size: 1.4rem;
+}
+
+.chart__bar {
+  $border-rad: 4px;
+  height: $chartBarHeight;
+  margin-bottom: $chartBarGap;
+  background: linear-gradient(to left, $red, $yellow);
+  border-top-right-radius: $border-rad;
+  border-bottom-right-radius: $border-rad;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+
+  .chart--dev & {
+    @include stagger-anim-delay($chartOneCount, 0.5s, 0.2s);
+  }
+  .chart--prod & {
+    @include stagger-anim-delay($chartTwoCount, 3.8s, 0.2s);
+  }
+  .chart--design & {
+    @include stagger-anim-delay($chartThreeCount, 5s, 0.2s);
+  }
+}
+
+.chart__label {
+  padding-left: 10px;
+  line-height: 30px;
+  color: white;
+
+  img{
+    height: 23px;
+    width: 23px;
+    margin-left: 0.5rem;
+  }
+}
+
+//Keyframes
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cv-download {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,24 +508,51 @@ export default {
   }
 }
 
+.formations-links{
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.competences{
+  margin: auto;
+}
+
 @include xxl {
 }
 @include xl {
+  .skills-page{
+    flex-direction: column;
+  }
+  
+  .skills{
+    margin: 0 1rem;
+    width: 90%;
+  }
 }
 @include md {
 }
 @include sm {
-  .download {
-    a {
-      margin-left: 10rem;
+  .lines{
+    .title, .l1, .l2{
+      font-size: 1.3rem;
     }
   }
 }
 @include xs {
-  .download {
-    position: static !important;
-    a {
-      margin: auto;
+  .custom-tooltip{
+    font-size: 1.1rem;
+  }
+  .lines{
+    .title{
+      display: none;
+    }
+    .l2{
+      bottom: 1rem;
+      text-align: start;
+      right: -7rem;
     }
   }
 }

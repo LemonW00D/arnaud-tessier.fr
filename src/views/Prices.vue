@@ -165,7 +165,7 @@
                 <div>
                   <p class="libelle">
                     Formulaire de contact (avec
-                    <a href="https://www.emailjs.com/pricing/">EmailJS</a>)
+                    <a href="https://www.emailjs.com/pricing/" target="_blank">EmailJS</a>)
                     &amp; Map
                   </p>
                 </div>
@@ -579,6 +579,11 @@ export default {
     margin: 0;
     padding: 0;
     padding-right: 0.5rem;
+
+    a{      
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
 
     router-link {
       font-size: 1.2rem;

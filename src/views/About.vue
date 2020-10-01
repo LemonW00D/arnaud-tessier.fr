@@ -10,7 +10,7 @@
             <template slot="header">
               <h6>09.2018 <span class="arrow">&#x21FE;</span> 12.2019</h6>
               <p>
-                <span class="italic">LUCINE</span>, Chargé de Recherche,
+                <span class="italic"><b>LUCINE</b></span>, Chargé de Recherche,
                 Bordeaux, France.
               </p>
               <p>
@@ -33,7 +33,7 @@
             <template slot="header">
               <h6>02.2018 <span class="arrow">&#x21FE;</span> 03.2018</h6>
               <p>
-                <span class="italic">AELIS FARMA</span>, Assistant Chef de
+                <span class="italic"><b>AELIS FARMA</b></span>, Assistant Chef de
                 Projet, Bordeaux, France.
               </p>
               <p>
@@ -56,7 +56,7 @@
             <template slot="header">
               <h6>01.2012 <span class="arrow">&#x21FE;</span> 02.2018</h6>
               <p>
-                <span class="italic">CH CHARLES PERRENS</span>, Ingénieur de
+                <span class="italic"><b>CH CHARLES PERRENS</b></span>, Ingénieur de
                 Recherche, Bordeaux, France.
               </p>
               <p>Recherches cliniques sur la Schizophrénie.</p>

@@ -6,7 +6,7 @@
           class="d-flex flex-column justify-content-center align-items-center"
         >
           <img
-            src="@/assets/img/logo-AT.png"
+            src="@/assets/img/logo-AT-mini.png"
             alt="Arnaud Tessier"
             class="logo"
           />
