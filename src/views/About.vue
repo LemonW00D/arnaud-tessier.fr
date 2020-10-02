@@ -110,7 +110,7 @@
       <div class="portrait">
         <h4>PORTRAIT</h4>
         <br />
-        <img src="@/assets/img/about-img.jpg" />
+        <img src="@/assets/img/about-img.jpg" class="shadow"/>
         <div class="portrait-red">
           <ul>
             <li>Né en 1990</li>

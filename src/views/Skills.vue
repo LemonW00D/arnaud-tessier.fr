@@ -9,7 +9,7 @@
           </li>
           <li class="line l--25">
             <span class="line__label l1">
-              Bases
+              Base
             </span>
           </li>
           <li class="line l--50">
@@ -176,7 +176,7 @@
         </div>
       </div>
     
-    <div class="d-flex flex-column justify-content-center">
+    <div class="d-flex flex-column justify-content-center" style="margin: auto 3rem;">
       <div class="cv-download" style="margin: auto">
         <a
           download="Arnaud_TESSIER_CV.pdf"
@@ -190,9 +190,10 @@
         <br>
       </div>
       <div class="formations-links">
-        <h5>Certifications :</h5>  
-        <a href="https://www.codecademy.com/profiles/LemonW00D" target="_blank">Codecademy</a>
-        <a href="https://dyma.fr/developer/5e4cfe9660a2e83ad0ddd6b2" target="_blank">Dyma</a>
+        <h5>Certifications</h5>  
+        <div><i class="fas fa-external-link-alt"></i><a href="https://www.codecademy.com/profiles/LemonW00D" target="_blank">Codecademy</a></div>
+        <div><i class="fas fa-external-link-alt"></i><a href="https://dyma.fr/developer/5e4cfe9660a2e83ad0ddd6b2" target="_blank">Dyma</a></div>
+        <div><i class="fas fa-external-link-alt"></i><a href="https://www.linkedin.com/in/arnaud-tessier-a9732b63/" target="_blank">LinkedIn</a></div>
       </div>
     </div>
 
@@ -200,45 +201,44 @@
 				<h4>Domaines de compétences</h4>
 				<ul class="list-unstyled list">
 					<li>
-						<strong>Gestion de projets web</strong>
+						<i class="far fa-check-circle"></i><strong>Réalisation de projets web</strong>
 						<br>
-						<em>Site vitrine, corporate, évènementiel, e-commerce, intranet, application mobile.</em>
+						<em>Site vitrine, évènementiel, portfolio, e-commerce.</em>
 					</li>
 					<li>
-						<strong>Conception graphique &amp; Webdesign</strong>
+						<i class="far fa-check-circle"></i><strong>Conception graphique &amp; Webdesign</strong>
 						<br>
-						<em>Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...</em>											
+						<em>Logo, couleurs, maquette Web.</em>											
+					</li>
+          <li>
+						<i class="far fa-check-circle"></i><strong>Gestion de CMS</strong> 
+						<br>
+						<em>Wordpress.</em>											
 					</li>
 					<li>
-						<strong>Applications spécifiques et Interface d'administration</strong>
+						<i class="far fa-check-circle"></i><strong>Interface d'administration (back-office)</strong>
 						<br>
-						<abbr title="Hypertext Preprocessor">PHP</abbr> - <abbr title="My Structured Query Language">MySQL</abbr> - <abbr title="Asynchronous JavaScript and XML">AJAX</abbr> / 
-						<abbr title="Active Server Pages">ASP</abbr>.NET - <abbr title="C Sharp">C#</abbr> - <abbr title="Structured Query Language">SQL</abbr>											
+						<em title="Hypertext Preprocessor">Uniquement sur WordPress.</em>											
+					</li>					
+					<li>
+						<i class="far fa-check-circle"></i><strong> Intégration HTML - CSS</strong>
+						<br>
+						<em>Codage à la main respectueux des standards du Web (W3C)</em>
 					</li>
 					<li>
-						<strong>Mise en place / Modification / Gestion de <abbr title="Content Management System">CMS</abbr></strong> 
+						<i class="far fa-check-circle"></i><strong>Pages dynamiques par JavaScript</strong> 
 						<br>
-						<em>Wordpress, Joomla, Prestashop, phpBB, IPBoard</em>											
+						<em>jQuery, Vue.js</em>
 					</li>
 					<li>
-						<strong> Intégration <abbr title="(eXtensible) HyperText Markup Language">(X)HTML</abbr> / <abbr title="Cascading Style Sheets">CSS</abbr></strong>
+						<i class="far fa-check-circle"></i><strong>Référencement naturel SEO</strong>
 						<br>
-						<em>Codage à la main respectueux des standards du Web</em>
+						<em>Accessibilité &amp; ergonomie des pages web, indexation Google (htaccess et sitemap)</em>											
 					</li>
 					<li>
-						<strong>Dynamise des pages par <abbr title="Langage de développement web orienté client">JavaScript</abbr> / <abbr title="Asynchronous JavaScript and XML">AJAX</abbr></strong> 
+						<i class="far fa-check-circle"></i><strong>Conception multi-plateformes</strong>
 						<br>
-						<em>jQuery, Prototype, Mootools, Scriptaculous</em>
-					</li>
-					<li>
-						<strong>Validation <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Accessibility Initiative">WAI</abbr> &amp; référencement naturel <abbr title="Search Engine Optimisation">SEO</abbr></strong>
-						<br>
-						<em>Accessibilité &amp; ergonomie des pages web</em>											
-					</li>
-					<li>
-						<strong>Conception multi-plateformes</strong>
-						<br>
-						<em>Compatible tous supports, tablette &amp; application mobile</em>
+						<em>Compatible tous supports: ordinateurs, tablettes &amp; smartphones</em>
 					</li>
 				</ul>
 			</div>
@@ -271,11 +271,13 @@ export default {
 @import "@/assets/scss/_responsive.scss";
 
 .skills-page{
+  min-height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 6rem;
+  overflow-x: hidden;
 }
 
 @mixin stagger-anim-delay($i, $initial-delay, $stagger-delay) {
@@ -374,7 +376,6 @@ $chartBarGap: 10px;
   opacity: 0;
   animation: 1s anim-lightspeed-in ease forwards;
 
-  .chart--dev & {}
   .chart--prod & {
     animation-delay: 3.3s;
   }
@@ -509,15 +510,57 @@ $chartBarGap: 10px;
 }
 
 .formations-links{
-  margin-top: 2.5rem;
+  margin: 4.5rem auto auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-self: start;
+    align-content: flex-start;
+  }
+
+  i{
+    width: 10px;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .competences{
   margin: auto;
+
+  h4{
+    margin-bottom: 3rem;
+  }
+
+  i{
+    margin-right: 1.5rem;
+  }
+
+  strong{
+    color: $dark-blue;
+  }
+
+  ul > li > em{
+    margin-left: 3rem;
+
+    &:after{
+      bottom: -2px;
+      left: 0;
+      display: block;
+      height: 4px;
+      background: $yellow;
+      width: 40px;
+      margin: 1rem 0 2rem 3rem;
+      content: "";
+    }
+  }
 }
 
 @include xxl {
@@ -531,7 +574,16 @@ $chartBarGap: 10px;
     margin: 0 1rem;
     width: 90%;
   }
+
+  .cv-download{
+    margin-top: 8rem !important;
+  }
+
+  .formations-links{
+    margin-bottom: 8rem !important;
+  }
 }
+
 @include md {
 }
 @include sm {
@@ -544,6 +596,9 @@ $chartBarGap: 10px;
 @include xs {
   .custom-tooltip{
     font-size: 1.1rem;
+  }
+  .competences{
+    margin: auto 1.5rem;
   }
   .lines{
     .title{
