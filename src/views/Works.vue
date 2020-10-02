@@ -37,7 +37,7 @@
           </div>
           <div class="projectPills timing pt-4">
             <p><i class="far fa-calendar-alt"></i> Date: <span>Août 2020</span></p>
-            <p><i class="fas fa-stopwatch"></i> Durée: <span>15 jours</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>20 jours</span></p>
           </div>
           <hr>
           <h5>Technologies utilisées</h5>
@@ -160,7 +160,7 @@
           </div>
           <div class="projectPills timing pt-4">
             <p><i class="far fa-calendar-alt"></i> Date: <span>Septembre 2020</span></p>
-            <p><i class="fas fa-stopwatch"></i> Durée: <span>6 jours</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>8 jours</span></p>
           </div>
           <hr>
           <h5>Technologies utilisées</h5>

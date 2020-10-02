@@ -213,7 +213,7 @@
           <li>
 						<i class="far fa-check-circle"></i><strong>Gestion de CMS</strong> 
 						<br>
-						<em>Wordpress.</em>											
+						<em>WordPress.</em>											
 					</li>
 					<li>
 						<i class="far fa-check-circle"></i><strong>Interface d'administration (back-office)</strong>
@@ -223,22 +223,22 @@
 					<li>
 						<i class="far fa-check-circle"></i><strong> Intégration HTML - CSS</strong>
 						<br>
-						<em>Codage à la main respectueux des standards du Web (W3C)</em>
+						<em>Codage à la main respectueux des standards du Web (W3C).</em>
 					</li>
 					<li>
 						<i class="far fa-check-circle"></i><strong>Pages dynamiques par JavaScript</strong> 
 						<br>
-						<em>jQuery, Vue.js</em>
+						<em>jQuery, Vue.js.</em>
 					</li>
 					<li>
 						<i class="far fa-check-circle"></i><strong>Référencement naturel SEO</strong>
 						<br>
-						<em>Accessibilité &amp; ergonomie des pages web, indexation Google (htaccess et sitemap)</em>											
+						<em>Accessibilité &amp; ergonomie des pages web, indexation Google (htaccess et sitemap).</em>											
 					</li>
 					<li>
 						<i class="far fa-check-circle"></i><strong>Conception multi-plateformes</strong>
 						<br>
-						<em>Compatible tous supports: ordinateurs, tablettes &amp; smartphones</em>
+						<em>Compatible tous supports: ordinateurs, tablettes &amp; smartphones.</em>
 					</li>
 				</ul>
 			</div>
