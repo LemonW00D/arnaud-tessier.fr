@@ -59,6 +59,7 @@
             <ul>
               <li><a href="https://gtmetrix.com/?url=http://www.arnaud-tessier.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = 95%</span></p></a></li>
               <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.arnaud-tessier.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farnaud-tessier-perso.netlify.app&tab=desktop" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 88%</span></p></a></li>
             </ul>
           </div>
         </div>
@@ -99,7 +100,7 @@
           </div>
           <div class="projectPills timing pt-4">
             <p><i class="far fa-calendar-alt"></i> Date: <span>Août 2020</span></p>
-            <p><i class="fas fa-stopwatch"></i> Durée: <span>5 jours</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>7 jours</span></p>
           </div>
           <hr>
           <h5>Technologies utilisées</h5>
@@ -120,6 +121,7 @@
             <ul>
               <li><a href="https://gtmetrix.com/?url=http://www.raphaelvincenot.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (95%)</span></p></a></li>
               <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.raphaelvincenot.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = B<br>(serveur OVH TLS 1.0)</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.raphaelvincenot.com%2F&hl=fr&tab=desktop" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 75%<br>(nombre et poids des images)</span></p></a></li>
             </ul>
           </div>
         </div>
@@ -160,7 +162,7 @@
           </div>
           <div class="projectPills timing pt-4">
             <p><i class="far fa-calendar-alt"></i> Date: <span>Septembre 2020</span></p>
-            <p><i class="fas fa-stopwatch"></i> Durée: <span>8 jours</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>10 jours</span></p>
           </div>
           <hr>
           <h5>Technologies utilisées</h5>
@@ -180,6 +182,7 @@
             <ul>
               <li><a href="https://gtmetrix.com/?url=http://www.kirolasante.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (96%)</span></p></a></li>
               <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.kirolasante.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = B<br>(serveur OVH TLS 1.0)</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kirolasante.fr%2F&tab=desktop&hl=fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 94%</span></p></a></li>
             </ul>
           </div>
         </div>
@@ -285,6 +288,10 @@ section {
           }
           .ssl{
             margin-left: 4.25rem;
+            font-size: 1.3rem;
+          }
+          .speed{            
+            margin-left: 5rem;
             font-size: 1.3rem;
           }
         }
