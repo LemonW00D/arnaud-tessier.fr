@@ -51,13 +51,13 @@
       <div
         class="d-flex flex-row justify-content-center align-items-center img-portrait animate__animated animate__bounceInRight"
       >
-        <img src="@/assets/img/julian.jpg" alt="portrait" />
+        <img src="@/assets/img/home-portrait-arnaud-tessier.jpg" alt="Arnaud TESSIER" />
       </div>
     </div>
     <div
       class="d-flex flex-row justify-content-center align-items-end img-pt-xs animate__animated animate__bounceInRight"
     >
-      <img src="@/assets/img/julian.jpg" alt="portrait" />
+      <img src="@/assets/img/home-portrait-arnaud-tessier.jpg" alt="Arnaud TESSIER" />
     </div>
   </div>
 </template>

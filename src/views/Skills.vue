@@ -36,7 +36,7 @@
               <li class="chart__bar" style="width: 95%;" id="html">
                 <span class="chart__label">
                   HTML5
-                  <img src="@/assets/img/html5.png" alt="html">
+                  <img src="@/assets/img/html5.webp" alt="html">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="html" triggers="hover" placement="left">
@@ -45,7 +45,7 @@
               <li class="chart__bar" style="width: 85%;" id="css">
                 <span class="chart__label">
                   CSS3
-                  <img src="@/assets/img/css3.png" alt="css">
+                  <img src="@/assets/img/css3.webp" alt="css">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="css" triggers="hover" placement="left">
@@ -54,7 +54,7 @@
               <li class="chart__bar" style="width: 70%;" id="sass">
                 <span class="chart__label">
                   Sass
-                  <img src="@/assets/img/sass.png" alt="sass" style="background-color: #eee">
+                  <img src="@/assets/img/sass.webp" alt="sass" style="background-color: #eee">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="sass" triggers="hover" placement="left">
@@ -63,7 +63,7 @@
               <li class="chart__bar" style="width: 70%;" id="bootstrap">
                 <span class="chart__label">
                   Bootstrap
-                  <img src="@/assets/img/bootstrap.png" alt="bootstrap">
+                  <img src="@/assets/img/bootstrap.webp" alt="bootstrap">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="bootstrap" triggers="hover" placement="left">
@@ -72,7 +72,7 @@
               <li class="chart__bar" style="width: 50%;" id="javascript">
                 <span class="chart__label">
                   JavaScript ES6
-                  <img src="@/assets/img/javascript.png" alt="javascript">
+                  <img src="@/assets/img/javascript.webp" alt="javascript">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="javascript" triggers="hover" placement="left">
@@ -81,7 +81,7 @@
               <li class="chart__bar" style="width: 50%;" id="webpack">
                 <span class="chart__label">
                   Webpack + Babel
-                  <img src="@/assets/img/webpack.png" alt="webpack">
+                  <img src="@/assets/img/webpack.webp" alt="webpack">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="webpack" triggers="hover" placement="left">
@@ -90,7 +90,7 @@
               <li class="chart__bar" style="width: 65%;" id="jquery">
                 <span class="chart__label">
                   jQuery
-                  <img src="@/assets/img/jquery.png" alt="jquery" style="width: 18px; height: 18px">
+                  <img src="@/assets/img/jquery.webp" alt="jquery" style="width: 18px; height: 18px">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="jquery" triggers="hover" placement="left">
@@ -99,7 +99,7 @@
               <li class="chart__bar" style="width: 75%;" id="vuejs">
                 <span class="chart__label">
                   Vue.js
-                  <img src="@/assets/img/vuejs.png" alt="vuejs">
+                  <img src="@/assets/img/vuejs.webp" alt="vuejs">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="vuejs" triggers="hover" placement="left">
@@ -108,16 +108,16 @@
               <li class="chart__bar" style="width: 75%;" id="bootstrap-vue">
                 <span class="chart__label">
                   Bootstrap-vue
-                  <img src="@/assets/img/bootstrap-vue.png" alt="bootstrap-vue">
+                  <img src="@/assets/img/bootstrap-vue.webp" alt="bootstrap-vue">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="bootstrap-vue" triggers="hover" placement="left">
                 Framework Vue.js.
               </b-tooltip>
-              <li class="chart__bar" style="width: 60%;" id="wordpress">
+              <li class="chart__bar" style="width: 75%;" id="wordpress">
                 <span class="chart__label">
                   Wordpress
-                  <img src="@/assets/img/wordpress.png" alt="wordpress">
+                  <img src="@/assets/img/wordpress.webp" alt="wordpress">
                 </span>
               </li>
               <b-tooltip custom-class="custom-tooltip" target="wordpress" triggers="hover" placement="left">
@@ -132,7 +132,7 @@
             <li class="chart__bar" style="width: 60%;" id="git">
               <span class="chart__label">
                 Git + Github
-                <img src="@/assets/img/github.png" alt="github">
+                <img src="@/assets/img/github.webp" alt="github">
               </span>
             </li>
             <b-tooltip custom-class="custom-tooltip" target="git" triggers="hover" placement="left">
@@ -141,7 +141,7 @@
             <li class="chart__bar" style="width: 90%;" id="microsoft">
               <span class="chart__label">
                 Microsoft Office
-                <img src="@/assets/img/microsoft.png" alt="microsoft">
+                <img src="@/assets/img/microsoft.webp" alt="microsoft">
               </span>
             </li>
             <b-tooltip custom-class="custom-tooltip" target="microsoft" triggers="hover" placement="left">
@@ -156,7 +156,7 @@
             <li class="chart__bar" style="width: 40%;" id="lunacy">
               <span class="chart__label">
                 Lunacy
-                <img src="@/assets/img/lunacy.png" alt="lunacy">
+                <img src="@/assets/img/lunacy.webp" alt="lunacy">
               </span>
             </li>
             <b-tooltip custom-class="custom-tooltip" target="lunacy" triggers="hover" placement="left">
@@ -165,7 +165,7 @@
             <li class="chart__bar" style="width: 75%;" id="ux">
               <span class="chart__label">
                 User Experience
-                <img src="@/assets/img/ux.png" alt="ux">
+                <img src="@/assets/img/ux.webp" alt="ux">
               </span>
             </li>
             <b-tooltip custom-class="custom-tooltip" target="ux" triggers="hover" placement="left">
@@ -417,6 +417,7 @@ $chartBarGap: 10px;
   padding-left: 10px;
   line-height: 30px;
   color: white;
+  cursor: help;
 
   img{
     height: 23px;
