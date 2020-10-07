@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-row justify-content-center align-items-center p-5">
+  <div class="d-flex flex-row justify-content-center align-items-center p-5 abt-xs">
     <div class="about">
       <div class="resume">
         <h4>EXPÉRIENCES</h4>
@@ -518,6 +518,9 @@ p {
   }
 }
 @include xs {
+  .abt-xs{
+    overflow-x: hidden;
+  }
   .portrait-red {
     width: 57.5%;
     left: 125px;

@@ -387,7 +387,11 @@ développeur Front-End !`
 }
 
 @include xs {
-  .home {
+  .home-page{
+    overflow-x: hidden;
+  }
+  .home {    
+    overflow-x: hidden;
     span {
       font-size: 2.25rem;
       line-height: 35px;
