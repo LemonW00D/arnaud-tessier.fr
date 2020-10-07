@@ -57,9 +57,9 @@
           <h5>Scores performance/sécurité</h5>
           <div class="projectPills pt-4">
             <ul>
-              <li><a href="https://gtmetrix.com/?url=http://www.arnaud-tessier.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = 95%</span></p></a></li>
-              <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.arnaud-tessier.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A</span></p></a></li>
-              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farnaud-tessier-perso.netlify.app&tab=desktop" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 88%</span></p></a></li>
+              <li><a href="https://gtmetrix.com/reports/www.arnaud-tessier.fr/eOfcG1sj" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (94%)</span></p></a></li>
+              <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.arnaud-tessier.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A+</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?hl=fr&url=https%3A%2F%2Fwww.arnaud-tessier.fr&tab=desktop" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 92%</span></p></a></li>
             </ul>
           </div>
         </div>
