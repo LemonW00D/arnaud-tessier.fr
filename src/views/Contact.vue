@@ -85,14 +85,16 @@
               rel="external nofollow noreferrer noopener"
               ><i class="fab fa-researchgate"></i>
             </a>
+            <!--
             <a
               href="https://www.facebook.com/arnaud.tessier/"
               target="_blank"
               rel="external nofollow noreferrer noopener"
               ><i class="fab fa-facebook"></i
             ></a>
+            -->
             <a
-              href="https://www.instagram.com/arnaud__tessier/?hl=fr"
+              href="https://www.instagram.com/arnaud_tessier.pro/?hl=fr"
               target="_blank"
               rel="external nofollow noreferrer noopener"
               ><i class="fab fa-instagram-square"></i
