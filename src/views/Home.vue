@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page">
+  <div class="home-page" style="padding-bottom: 3rem">
     <div class="yellow-bg"></div>
     <div class="home">
       <div class="typer-block animate__animated animate__bounceInLeft">
@@ -175,7 +175,7 @@ développeur Front-End !`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #072939;
+  background-color: $dark-blue;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-size: 1.8rem;
@@ -250,7 +250,7 @@ développeur Front-End !`
     }
     &:before {
       border: 2px solid #ee283e;
-      background-color: #072939;
+      background-color: $dark-blue;
       transform: skew(-25deg);
       transition: 0.3s ease-in-out;
     }

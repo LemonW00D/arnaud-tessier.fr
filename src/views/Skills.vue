@@ -1,5 +1,5 @@
 <template>
-  <div class="skills-page">
+  <div class="skills-page" style="padding-bottom: 3rem">
     <div class="skills">
         <ul class="lines">
           <li class="line l--0">

@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-row justify-content-center align-items-center p-5 abt-xs">
+  <div class="d-flex flex-row justify-content-center align-items-center p-5 abt-xs" style="padding-bottom: 3rem">
     <div class="about">
       <div class="resume">
         <h4>EXPÉRIENCES</h4>
@@ -347,7 +347,7 @@ p {
     padding: 0 4rem;
   }
   .timeline {
-    background-color: #072939;
+    background-color: $dark-blue;
     margin: 2rem 4rem 0 4rem;
   }
   .dwnld-btn {

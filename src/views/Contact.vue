@@ -1,7 +1,7 @@
 <template>
   <div
     class="d-flex flex-row justify-content-center align-items-center px-5"
-    style="padding-top: 6rem"
+    style="padding-top: 6rem; padding-bottom: 3rem"
   >
     <main class="contact-page">
       <section class="location animate__animated animate__fadeInBottomRight">

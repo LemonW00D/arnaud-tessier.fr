@@ -1,7 +1,7 @@
 <template>
   <div
     class="d-flex flex-column justify-content-center align-items-center px-5"
-    style="padding-top: 6rem"
+    style="padding-top: 6rem; padding-bottom: 3rem"
   >
     <div class="container price-section style2">
       <div class="row">
