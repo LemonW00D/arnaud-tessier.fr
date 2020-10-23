@@ -96,7 +96,7 @@
               <b-tooltip custom-class="custom-tooltip" target="jquery" triggers="hover" placement="left">
                    Bibliothèque JavaScript pour les animations.
               </b-tooltip>
-              <li class="chart__bar" style="width: 75%;" id="vuejs">
+              <li class="chart__bar" style="width: 65%;" id="vuejs">
                 <span class="chart__label">
                   Vue.js
                   <img src="@/assets/img/vuejs.webp" alt="vuejs">
@@ -114,7 +114,7 @@
               <b-tooltip custom-class="custom-tooltip" target="bootstrap-vue" triggers="hover" placement="left">
                 Framework Vue.js.
               </b-tooltip>
-              <li class="chart__bar" style="width: 75%;" id="wordpress">
+              <li class="chart__bar" style="width: 65%;" id="wordpress">
                 <span class="chart__label">
                   Wordpress
                   <img src="@/assets/img/wordpress.webp" alt="wordpress">

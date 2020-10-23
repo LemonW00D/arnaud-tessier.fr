@@ -360,7 +360,7 @@
               spécifiques</strong
             >
             <span class="mount">Taux journalier moyen</span>
-            <span class="price">450<sup>€/JOUR</sup></span>
+            <span class="price">350<sup>€/JOUR</sup></span>
             <div class="barre"></div>
             <ul class="list-unstyled price-list">
               <li class="row-alt d-flex flex-row">
@@ -417,6 +417,17 @@
         >
       </div>
     </footer>
+    <br>
+      <div>
+        <a
+            download="Arnaud_TESSIER_CGV.pdf"
+            href="Arnaud_TESSIER_CGV.pdf"
+            target="_blank"
+            rel="external nofollow noreferrer noopener"
+            title="Conditions Générales de Vente"
+            role="link"
+            aria-pressed="false">Conditions Générales de Vente</a>
+      </div>
   </div>
 </template>
 
@@ -654,7 +665,7 @@ footer {
   background: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   padding: 1rem 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   border: 2px solid $dark-blue;
   border-radius: 24px;
 
