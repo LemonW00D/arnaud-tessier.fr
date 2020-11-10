@@ -1,6 +1,6 @@
 <template>
   <div class="leftside d-flex flex-column justify-content-center align-items-center px-5"
-    style="padding-top: 4rem">
+    style="padding-top: 3rem">
     <section class="row projects" id="start-projects">
       <!-- WWW.ARNAUD-TESSIER.FR -->
       <div class="col-xs-12 col-sm-6 col-lg-4 project-tile animate__animated animate__zoomIn">
@@ -416,7 +416,7 @@ section {
 
 
 .project-tile {
-  padding: 0rem 5% 4rem;
+  padding: 0rem 5% 3rem;
 
   .thumbnail {
     background: #FFF;
