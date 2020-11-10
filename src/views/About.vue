@@ -86,6 +86,8 @@
             rel="external nofollow noreferrer noopener"
             title="Mon CV en pdf"
             role="link"
+            data-loading="document-download"
+            data-disable="document-download"
             aria-pressed="false"
           >
             <button class="continue-application">

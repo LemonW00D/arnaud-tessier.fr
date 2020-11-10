@@ -152,7 +152,7 @@
           <hr>
           <h5>Description du projet</h5>
           <div class="projectPills pt-4">
-            <p class="head-desc">Site web type portfolio. Raphaël Vincenot est un artiste peintre à Paris (75).</p>
+            <p class="head-desc">Site web type portfolio. Kirola Santé est une société de coaching sportif pour juniors et seniors à Biarritz (64).</p>
             <div class="desc">
               <p><i class="fas fa-check"></i> <b>Site vitrine personnalisé (JS)</b></p>
               <p><i class="fas fa-check"></i> Conception graphique & Webdesign (sauf logo)</p>
@@ -183,6 +183,67 @@
               <li><a href="https://gtmetrix.com/?url=http://www.kirolasante.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (96%)</span></p></a></li>
               <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.kirolasante.fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = B<br>(serveur OVH TLS 1.0)</span></p></a></li>
               <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kirolasante.fr%2F&tab=desktop&hl=fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 94%</span></p></a></li>
+            </ul>
+          </div>
+        </div>
+      </b-sidebar>
+
+      <!-- WWW.GUILLAUMELAVRILLEUX.COM -->
+      <div class="col-xs-12 col-sm-6 col-lg-4 project-tile animate__animated animate__zoomIn animate__delay-3s">
+        <div class="thumbnail shadow">
+          <img src="@/assets/img/guillaume-lavrilleux-cover.jpg" alt="Guillaume Lavrilleux">
+          <div class="caption">
+            <h4>Guillaume Lavrilleux</h4>
+            <p class="description">Sound designer, Bordeaux</p>
+            <div class="d-flex flex-row justify-content-around align-item-center py-2">
+              <a class="btn btn-default btn-proj" href="https://www.guillaumelavrilleux.com" target="_blank"><i class="fas fa-globe"></i>Site Web</a>
+              <a class="btn btn-default btn-code" href="https://github.com/LemonW00D/Guillaume-Lavrilleux" target="_blank"><i class="fab fa-github"></i>Code Source</a>
+            </div>
+            <div>
+              <b-button v-b-toggle.sidebar-right-4 id="bouton-sidebar" class="hvr-border-fade">Plus d'informations</b-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <b-sidebar id="sidebar-right-4" title="Sidebar" right shadow>
+        <div class="px-3">
+          <h4>Guillaume Lavrilleux</h4>
+          <a href="https://www.guillaumelavrilleux.com" target="_blank">www.guillaumelavrilleux.com</a>
+          <img src="@/assets/img/guillaume-lavrilleux-sidebar.jpg" alt="Guillaume Lavrilleux" fluid thumbnail style="border: none; margin: 2rem 0 0;">
+          <hr>
+          <h5>Description du projet</h5>
+          <div class="projectPills pt-4">
+            <p class="head-desc">Site web type CV/portfolio. Guillaume Lavrilleux est sound designer pour les jeux vidéo et les expériences interactives à Bordeaux (33).</p>
+            <div class="desc">
+              <p><i class="fas fa-check"></i> <b>Site vitrine personnalisé (JS)</b></p>
+              <p><i class="fas fa-check"></i> Conception graphique & Webdesign</p>
+              <p><i class="fas fa-check"></i> Développement sous HTML-CSS-JS</p>
+              <p><i class="fas fa-check"></i> Site Responsive (compatible tous supports)</p>
+            </div>
+          </div>
+          <div class="projectPills timing pt-4">
+            <p><i class="far fa-calendar-alt"></i> Date: <span>Novembre 2020</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>10 jours</span></p>
+          </div>
+          <hr>
+          <h5>Technologies utilisées</h5>
+          <div class="projectPills pt-4">
+            <span class="label html">HTML</span>
+            <span class="label css">CSS</span>
+            <span class="label sass">SASS</span>
+            <span class="label bootstrap">Bootstrap</span>
+          </div>
+          <div class="projectPills py-2">
+            <span class="label javascript">JS ES6</span>
+            <span class="label jquery">jQuery</span>
+          </div>
+          <hr>
+          <h5>Scores performance/sécurité</h5>
+          <div class="projectPills pt-4">
+            <ul>
+              <li><a href="https://gtmetrix.com/?url=https://www.guillaumelavrilleux.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (98%)</span></p></a></li>
+              <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.guillaumelavrilleux.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A+</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.guillaumelavrilleux.com%2F&tab=desktop&hl=fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 86%</span></p></a></li>
             </ul>
           </div>
         </div>
@@ -225,7 +286,7 @@ section {
   box-shadow: none;
 }
 
-#sidebar-right-1, #sidebar-right-2, #sidebar-right-3{
+#sidebar-right-1, #sidebar-right-2, #sidebar-right-3, #sidebar-right-4{
   img{
       width: 100%;
       height: auto;

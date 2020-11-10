@@ -426,6 +426,8 @@
             rel="external nofollow noreferrer noopener"
             title="Conditions Générales de Vente"
             role="link"
+            data-loading="document-download"
+            data-disable="document-download"
             aria-pressed="false">Conditions Générales de Vente</a>
       </div>
   </div>

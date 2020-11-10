@@ -185,6 +185,8 @@
           rel="external nofollow noreferrer noopener"
           title="Mon CV en pdf"
           role="link"
+          data-loading="document-download"
+          data-disable="document-download"
           aria-pressed="false"
           >télécharger mon cv</a>
         <br>
@@ -520,7 +522,7 @@ $chartBarGap: 10px;
   div{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     align-self: start;
     align-content: flex-start;
