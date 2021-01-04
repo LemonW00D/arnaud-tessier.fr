@@ -8,6 +8,27 @@
         <badger-accordion>
           <badger-accordion-item>
             <template slot="header">
+              <h6>09.2020 <span class="arrow">&#x21FE;</span> ...</h6>
+              <p>
+                <span class="italic"><b>FREELANCE</b></span>, Développeur Web Front-End,
+                Bordeaux, France.
+              </p>
+              <p>
+                Réalisation de sites web.
+              </p>
+              <div class="down"><i class="fas fa-angle-down"></i></div>
+            </template>
+            <template slot="content">
+              <p class="p2">
+                Création de sites web responsives de types CV, Portflolio, Vitrine avec JavaScript (Vue.js) ou e-commerce avec WordPress.
+              </p>
+            </template>
+          </badger-accordion-item>
+        </badger-accordion>
+        
+        <badger-accordion>
+          <badger-accordion-item>
+            <template slot="header">
               <h6>09.2018 <span class="arrow">&#x21FE;</span> 12.2019</h6>
               <p>
                 <span class="italic"><b>LUCINE</b></span>, Chargé de Recherche,
@@ -193,7 +214,7 @@ h4 {
 
   .fas {
     font-size: 2.5rem;
-    padding: 0 0 1rem 0;
+    padding: 0 0 0.5rem 0;
     margin: 0;
     color: $yellow;
   }
@@ -215,8 +236,12 @@ h4 {
 }
 
 .component-badger-accordion {
-  margin-bottom: 1rem;
-  padding: 1rem 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+
+  h6{
+    margin: 0.5rem 0;
+  }
 
   &:focus {
     border: none;

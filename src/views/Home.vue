@@ -96,11 +96,10 @@ développeur Front-End !`
   box-sizing: border-box;
   width: 100vw;
   min-height: 90vh;
-  overflow-y: hidden;
 }
 
 .yellow-bg {
-  height: calc(100vh - 58px);
+  height: 100%; /*calc(100vh - 58px);*/
   width: 75%;
   position: absolute;
   z-index: 0;

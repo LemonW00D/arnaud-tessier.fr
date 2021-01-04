@@ -19,7 +19,7 @@ export default {
   name: "preloader",
   data() {
     return {
-      show: true
+      show: true,
     };
   },
   mounted() {
@@ -30,8 +30,9 @@ export default {
       setTimeout(() => {
         this.show = false;
       }, 2000);
-    }
-  }
+    },
+  },
+  watch: {},
 };
 </script>
 
@@ -43,7 +44,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 150vh;
   background-color: $dark-blue;

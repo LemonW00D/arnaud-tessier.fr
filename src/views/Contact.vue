@@ -1,7 +1,7 @@
 <template>
   <div
     class="d-flex flex-row justify-content-center align-items-center px-5"
-    style="padding-top: 6rem; padding-bottom: 3rem"
+    style="padding-top: 4rem; padding-bottom: 3rem"
   >
     <main class="contact-page">
       <section class="location animate__animated animate__fadeInBottomRight">
@@ -85,14 +85,6 @@
               rel="external nofollow noreferrer noopener"
               ><i class="fab fa-researchgate"></i>
             </a>
-            <!--
-            <a
-              href="https://www.facebook.com/arnaud.tessier/"
-              target="_blank"
-              rel="external nofollow noreferrer noopener"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            -->
             <a
               href="https://www.instagram.com/arnaud_tessier.pro/?hl=fr"
               target="_blank"
@@ -239,6 +231,15 @@ export default {
 @import "@/assets/scss/_variables.scss";
 @import "@/assets/scss/_responsive.scss";
 
+.formulaire{
+  border: 16px solid transparent;
+	border-image: 16 repeating-linear-gradient(-45deg, #D01F33 0, #D01F33 1em, transparent 0, transparent 2em,
+	              #3C4E82 0, #3C4E82 3em, transparent 0, transparent 4em);
+                
+  padding-right: calc(6rem - 16px);
+  padding-left: calc(5rem - 16px);
+}
+
 #contact-me {
   &:hover {
     span {
@@ -346,11 +347,12 @@ section {
 }
 .contact-box {
   margin-top: 7.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /*background-image: url('../assets/img/map4.jpg');*/
 }
 
 .contact {
@@ -400,7 +402,7 @@ a {
   img {
     max-height: 300px;
     height: auto;
-    min-height: 250px;
+    min-height: auto;
     width: auto;
   }
 }
@@ -472,7 +474,7 @@ a {
 }
 
 hr {
-  margin: 7rem 0 4rem;
+  margin: 9rem 0 1rem;
 }
 
 .horaires {
@@ -519,6 +521,9 @@ hr {
   }
   .fab {
     font-size: 3rem;
+  }
+  .fancy{
+    width: 175px;
   }
 }
 

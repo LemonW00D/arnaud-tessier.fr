@@ -24,7 +24,7 @@
                 <div><i class="fas fa-caret-right" aria-hidden="true"></i></div>
                 <div>
                   <p class="libelle">
-                    Charte graphique à partir d'une maquette pré-définie
+                    Charte graphique à partir d'une maquette/thème pré-définie
                   </p>
                 </div>
               </li>
@@ -45,7 +45,7 @@
               <li class="row-alt d-flex flex-row">
                 <div><i class="fas fa-caret-right" aria-hidden="true"></i></div>
                 <div>
-                  <p class="libelle">Interface administrateur standard</p>
+                  <p class="libelle">Interface administrateur standard WordPress</p>
                 </div>
               </li>
               <li class="row-alt d-flex flex-row">
@@ -247,7 +247,7 @@
                 <div><i class="fas fa-caret-right" aria-hidden="true"></i></div>
                 <div>
                   <p class="libelle">
-                    Installation &amp; configuration des plugins choisis
+                    Interface administrateur standard WordPress
                   </p>
                 </div>
               </li>
@@ -368,6 +368,12 @@
                 <div><p class="libelle">Sur contact et devis</p></div>
               </li>
             </ul>
+            <div id="think-div">
+              <img v-b-modal.modal-center src="@/assets/img/think.png" alt="Think" id="think-emoji">
+              <b-modal ref="modal-center" centered id="modal-center" size="xl" title="Modal350" >
+                <img src="@/assets/img/350e-expliquer.jpg" alt="Explications" id="think-img" @shown="focusMyElement" ref="focusImg">
+              </b-modal>             
+            </div>
           </div>
         </div>
         <!-- LEGENDE -->
@@ -401,14 +407,14 @@
           >Malt</a
         >
         <a
-          href="https://www.urbanlinker.com/le-webzine/etude-des-salaires-tech-en-region-2020-206"
+          href="https://www.urbanlinker.com/blog/377"
           target="_blank"
           >Urban Linker</a
         >
         <a
-          href="https://www.lemondeinformatique.fr/actualites/lire-la-crise-a-fait-progresser-les-salaires-it-de-2-3-80302.html"
+          href="https://www.externatic.fr/salaires-informatique/etude-salaires-informatique-2020/"
           target="_blank"
-          >Le Monde Informatique</a
+          >externatic</a
         >
         <a
           href="https://www.kicklox.com/salaire-developpeur-2019/"
@@ -434,13 +440,38 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue);
+import { BModal } from 'bootstrap-vue';
+
 export default {
   name: "Prices",
-  components: {},
+  components: {
+    BModal,
+  },
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    showModal() {
+      this.$refs['modal-center'].show()
+    },
+    focusMyElement() {
+      this.$refs['focusImg'].focus()
+    },
+  },
+  watch: {
+    isModalVisible: function() {
+      if(this.isModalVisible){
+        document.documentElement.style.overflow = 'hidden'
+        return
+      }
+
+      document.documentElement.style.overflow = 'auto'
+    }
+  }
 };
 </script>
 
@@ -643,6 +674,39 @@ export default {
   }
 }
 
+#think-div{
+  text-align: center;
+  vertical-align: middle;
+}
+
+#think-emoji{
+  max-height: 40px;
+  cursor: pointer;
+}
+
+#think-img{
+  height: auto;
+  max-height: 96vh;
+}
+
+#modal-center___BV_modal_body_{
+  text-align: center;
+  vertical-align: middle;
+}
+
+#modal-center___BV_modal_header_, #modal-center___BV_modal_footer_{
+  display: none;
+}
+
+.modal-backdrop {
+  height: 100%;
+}
+
+#modal-center___BV_modal_outer_{
+  position: fixed !important;
+  overflow: hidden !important;
+}
+
 .maintenance {
   height: 60% !important;
 }
@@ -663,7 +727,7 @@ export default {
 
 footer {
   height: auto;
-  min-width: 55%;
+  min-width: 50%;
   background: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   padding: 1rem 2rem;

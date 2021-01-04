@@ -249,6 +249,70 @@
         </div>
       </b-sidebar>
 
+      <!-- WWW.BLOOM-ATELIERS.FR -->
+      <div class="col-xs-12 col-sm-6 col-lg-4 project-tile animate__animated animate__zoomIn animate__delay-4s">
+        <div class="thumbnail shadow">
+          <img src="@/assets/img/bloom-ateliers-cover.jpg" alt="Bloom Ateliers">
+          <div class="caption">
+            <h4>Bloom Ateliers</h4>
+            <p class="description">Créations textiles, Bordeaux</p>
+            <div class="d-flex flex-row justify-content-around align-item-center py-2">
+              <p style="padding: .375rem .75rem; color: grey; text-align: center"><i class="fas fa-globe"></i>Site Web</p>
+              <p style="padding: .375rem .75rem; color: grey; text-align: center"><i class="fab fa-github"></i>Code Source</p>
+            </div>
+            <div>
+              <b-button v-b-toggle.sidebar-right-5 id="bouton-sidebar" class="hvr-border-fade">Plus d'informations</b-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <b-sidebar id="sidebar-right-5" title="Sidebar" right shadow>
+        <div class="px-3">
+          <h4>Bloom Ateliers</h4>
+          <p>Développement en local avec MAMP</p>
+          <!--<a href="https://www.guillaumelavrilleux.com" target="_blank">www.guillaumelavrilleux.com</a>-->
+          <img src="@/assets/img/bloom-ateliers-sidebar.jpg" alt="Bloom Ateliers" fluid thumbnail style="border: none; margin: 2rem 0 0;">
+          <hr>
+          <h5>Description du projet</h5>
+          <div class="projectPills pt-4">
+            <p class="head-desc">Site web e-commerce. Bloom propose des créations textiles originales et sur-mesure à Bordeaux (33).</p>
+            <div class="desc">
+              <p><i class="fas fa-check"></i> <b>Plateforme e-commerce (WordPress)</b></p>
+              <p><i class="fas fa-check"></i> Conception graphique & Webdesign</p>
+              <p><i class="fas fa-check"></i> Développement sous WordPress</p>
+              <p><i class="fas fa-check"></i> Personnalisation avec CSS-JS-JQuery</p>
+              <p><i class="fas fa-check"></i> Site Responsive (compatible tous supports)</p>
+            </div>
+          </div>
+          <div class="projectPills timing pt-4">
+            <p><i class="far fa-calendar-alt"></i> Date: <span>Décembre 2020</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>en cours</span></p>
+          </div>
+          <hr>
+          <h5>Technologies utilisées</h5>
+          <div class="projectPills pt-4">
+            <span class="label wordpress">WordPress</span>
+            <span class="label css">CSS</span>
+            <span class="label sass">SASS</span>
+          </div>
+          <div class="projectPills py-2">
+            <span class="label javascript">JS ES6</span>
+            <span class="label jquery">jQuery</span>
+          </div>
+          <!--
+          <hr>
+          <h5>Scores performance/sécurité</h5>
+          <div class="projectPills pt-4">
+            <ul>
+              <li><a href="https://gtmetrix.com/?url=https://www.guillaumelavrilleux.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (98%)</span></p></a></li>
+              <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.guillaumelavrilleux.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A+</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.guillaumelavrilleux.com%2F&tab=desktop&hl=fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 86%</span></p></a></li>
+            </ul>
+          </div>
+          -->
+        </div>
+      </b-sidebar>
+
       
     </section>
   </div>
@@ -286,7 +350,7 @@ section {
   box-shadow: none;
 }
 
-#sidebar-right-1, #sidebar-right-2, #sidebar-right-3, #sidebar-right-4{
+#sidebar-right-1, #sidebar-right-2, #sidebar-right-3, #sidebar-right-4, #sidebar-right-5{
   img{
       width: 100%;
       height: auto;
@@ -395,6 +459,10 @@ section {
       .bootstrap-vue{
         color: white;
         background: linear-gradient(90deg, #43B381, #34495D, #673AB7);
+      }
+      .wordpress{
+        color: white;
+        background-color: #32373C;
       }
     }
 

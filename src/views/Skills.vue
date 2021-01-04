@@ -216,12 +216,7 @@
 						<i class="far fa-check-circle"></i><strong>Gestion de CMS</strong> 
 						<br>
 						<em>WordPress.</em>											
-					</li>
-					<li>
-						<i class="far fa-check-circle"></i><strong>Interface d'administration (back-office)</strong>
-						<br>
-						<em title="Hypertext Preprocessor">Uniquement sur WordPress.</em>											
-					</li>					
+					</li>			
 					<li>
 						<i class="far fa-check-circle"></i><strong> Intégration HTML - CSS</strong>
 						<br>
