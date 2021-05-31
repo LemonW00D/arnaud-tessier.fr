@@ -1,7 +1,7 @@
 <template>
   <div
     class="d-flex flex-column justify-content-center align-items-center px-5"
-    style="padding-top: 6rem; padding-bottom: 3rem"
+    style="padding-top: 6rem; padding-bottom: 3rem; z-index:2"
   >
     <div class="container price-section style2">
       <div class="row">
@@ -45,7 +45,9 @@
               <li class="row-alt d-flex flex-row">
                 <div><i class="fas fa-caret-right" aria-hidden="true"></i></div>
                 <div>
-                  <p class="libelle">Interface administrateur standard WordPress</p>
+                  <p class="libelle">
+                    Interface administrateur standard WordPress
+                  </p>
                 </div>
               </li>
               <li class="row-alt d-flex flex-row">
@@ -165,8 +167,9 @@
                 <div>
                   <p class="libelle">
                     Formulaire de contact (avec
-                    <a href="https://www.emailjs.com/pricing/" target="_blank">EmailJS</a>)
-                    &amp; Map
+                    <a href="https://www.emailjs.com/pricing/" target="_blank"
+                      >EmailJS</a
+                    >) &amp; Map
                   </p>
                 </div>
               </li>
@@ -369,10 +372,28 @@
               </li>
             </ul>
             <div id="think-div">
-              <img v-b-modal.modal-center src="@/assets/img/think.png" alt="Think" id="think-emoji">
-              <b-modal ref="modal-center" centered id="modal-center" size="xl" title="Modal350" >
-                <img src="@/assets/img/350e-expliquer.jpg" alt="Explications" id="think-img" @shown="focusMyElement" ref="focusImg">
-              </b-modal>             
+              <img
+                v-b-modal.modal-center
+                src="@/assets/img/think.png"
+                alt="Think"
+                id="think-emoji"
+                data-cursor-hover
+              />
+              <b-modal
+                ref="modal-center"
+                centered
+                id="modal-center"
+                size="xl"
+                title="Modal350"
+              >
+                <img
+                  src="@/assets/img/350e-expliquer.jpg"
+                  alt="Explications"
+                  id="think-img"
+                  @shown="focusMyElement"
+                  ref="focusImg"
+                />
+              </b-modal>
             </div>
           </div>
         </div>
@@ -404,47 +425,60 @@
         <a
           href="https://www.malt.fr/t/barometre-tarifs/tech/developpeur-frontend"
           target="_blank"
+          data-cursor-hidden
           >Malt</a
         >
         <a
           href="https://www.urbanlinker.com/blog/377"
           target="_blank"
+          data-cursor-hidden
           >Urban Linker</a
+        >
+        <a
+          href="https://simulateurs.shine.fr/developpeur"
+          target="_blank"
+          data-cursor-hidden
+          >Shine</a
         >
         <a
           href="https://www.externatic.fr/salaires-informatique/etude-salaires-informatique-2020/"
           target="_blank"
+          data-cursor-hidden
           >externatic</a
         >
         <a
           href="https://www.kicklox.com/salaire-developpeur-2019/"
           target="_blank"
+          data-cursor-hidden
           >Kicklox</a
         >
       </div>
     </footer>
-    <br>
-      <div>
-        <a
-            download="Arnaud_TESSIER_CGV.pdf"
-            href="Arnaud_TESSIER_CGV.pdf"
-            target="_blank"
-            rel="external nofollow noreferrer noopener"
-            title="Conditions Générales de Vente"
-            role="link"
-            data-loading="document-download"
-            data-disable="document-download"
-            aria-pressed="false">Conditions Générales de Vente</a>
-      </div>
+    <br />
+    <div>
+      <a
+        download="Arnaud_TESSIER_CGV.pdf"
+        href="Arnaud_TESSIER_CGV.pdf"
+        target="_blank"
+        rel="external nofollow noreferrer noopener"
+        title="Conditions Générales de Vente"
+        role="link"
+        data-loading="document-download"
+        data-disable="document-download"
+        aria-pressed="false"
+        data-cursor-hover
+        >Conditions Générales de Vente</a
+      >
+    </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Vue from "vue";
+import BootstrapVue from "bootstrap-vue";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(BootstrapVue);
-import { BModal } from 'bootstrap-vue';
+import { BModal } from "bootstrap-vue";
 
 export default {
   name: "Prices",
@@ -456,22 +490,22 @@ export default {
   },
   methods: {
     showModal() {
-      this.$refs['modal-center'].show()
+      this.$refs["modal-center"].show();
     },
     focusMyElement() {
-      this.$refs['focusImg'].focus()
+      this.$refs["focusImg"].focus();
     },
   },
   watch: {
     isModalVisible: function() {
-      if(this.isModalVisible){
-        document.documentElement.style.overflow = 'hidden'
-        return
+      if (this.isModalVisible) {
+        document.documentElement.style.overflow = "hidden";
+        return;
       }
 
-      document.documentElement.style.overflow = 'auto'
-    }
-  }
+      document.documentElement.style.overflow = "auto";
+    },
+  },
 };
 </script>
 
@@ -624,7 +658,7 @@ export default {
     padding: 0;
     padding-right: 0.5rem;
 
-    a{      
+    a {
       font-size: 1.2rem;
       text-decoration: underline;
     }
@@ -674,27 +708,28 @@ export default {
   }
 }
 
-#think-div{
+#think-div {
   text-align: center;
   vertical-align: middle;
 }
 
-#think-emoji{
+#think-emoji {
   max-height: 40px;
   cursor: pointer;
 }
 
-#think-img{
+#think-img {
   height: auto;
   max-height: 96vh;
 }
 
-#modal-center___BV_modal_body_{
+#modal-center___BV_modal_body_ {
   text-align: center;
   vertical-align: middle;
 }
 
-#modal-center___BV_modal_header_, #modal-center___BV_modal_footer_{
+#modal-center___BV_modal_header_,
+#modal-center___BV_modal_footer_ {
   display: none;
 }
 
@@ -702,7 +737,7 @@ export default {
   height: 100%;
 }
 
-#modal-center___BV_modal_outer_{
+#modal-center___BV_modal_outer_ {
   position: fixed !important;
   overflow: hidden !important;
 }
@@ -738,6 +773,10 @@ footer {
   .sources-title {
     text-decoration: underline;
     font-weight: 600;
+  }
+
+  a {
+    cursor: pointer !important;
   }
 
   p {

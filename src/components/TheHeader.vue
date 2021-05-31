@@ -68,7 +68,7 @@ export default {
           nav.classList.remove("show");
         });
         const nav = document.querySelector(`#${binding.value}`);
-        el.addEventListener("click", event => {
+        el.addEventListener("click", (event) => {
           if (nav.classList.contains("show")) {
             nav.classList.remove("show");
           } else {
@@ -76,12 +76,9 @@ export default {
           }
           event.stopPropagation();
         });
-      }
-    }
-  } /*
-  components: {
-    Toggle,
-  },*/
+      },
+    },
+  },
 };
 </script>
 
@@ -92,6 +89,11 @@ nav {
   padding: 0.5rem 1rem;
   background: $dark-blue;
   z-index: 99999;
+  cursor: default !important;
+}
+
+#collapse {
+  cursor: default !important;
 }
 
 .logo {
@@ -122,13 +124,32 @@ span,
 li {
   width: 130px;
   a {
-    cursor: pointer;
     font-size: 1.4rem;
     line-height: 2.4rem;
     margin: 0 0.25rem;
   }
 }
-
+/*
+li:nth-child(1) > a {
+  cursor: url("https://img.icons8.com/color/30/000000/home.png"), auto;
+}
+li:nth-child(2) > a {
+  cursor: url("https://img.icons8.com/office/30/000000/open-resume.png"), auto;
+}
+li:nth-child(3) > a {
+  cursor: url("https://img.icons8.com/dusk/30/000000/development-skill.png"),
+    auto;
+}
+li:nth-child(4) > a {
+  cursor: url("https://img.icons8.com/fluent/30/000000/laptop-coding.png"), auto;
+}
+li:nth-child(5) > a {
+  cursor: url("https://img.icons8.com/color/35/000000/price-tag-euro.png"), auto;
+}
+li:nth-child(6) > a {
+  cursor: url("https://img.icons8.com/fluent/30/000000/filled-sent.png"), auto;
+}
+*/
 .navbar-brand {
   font-size: 2.4rem;
   line-height: 2.4rem;
@@ -139,6 +160,10 @@ li {
 li {
   letter-spacing: 1px;
   line-height: 2.1rem;
+
+  :hover {
+    cursor: pointer;
+  }
 }
 
 span {

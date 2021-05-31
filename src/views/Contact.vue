@@ -1,7 +1,7 @@
 <template>
   <div
     class="d-flex flex-row justify-content-center align-items-center px-5"
-    style="padding-top: 4rem; padding-bottom: 3rem"
+    style="padding-top: 4rem; padding-bottom: 3rem; z-index:2"
   >
     <main class="contact-page">
       <section class="location animate__animated animate__fadeInBottomRight">
@@ -36,7 +36,7 @@
                 <i class="fas fa-phone-alt"></i>
                 <div class="d-flex flex-column align-items-start item">
                   <h3 id="phone"><span>Téléphone</span></h3>
-                  <a href="tel:0643434155">06 43 43 41 55</a>
+                  <a href="tel:0643434155" data-cursor-hover>06 43 43 41 55</a>
                 </div>
               </div>
 
@@ -48,7 +48,7 @@
                 <i class="fas fa-at"></i>
                 <div class="d-flex flex-column align-items-start item">
                   <h3 id="mail"><span>Mail</span></h3>
-                  <a href="mailto:arnaud.tessier33@gmail.com"
+                  <a href="mailto:arnaud.tessier33@gmail.com" data-cursor-hover
                     >arnaud.tessier33@gmail.com</a
                   >
                 </div>
@@ -71,24 +71,28 @@
               href="https://github.com/LemonW00D"
               target="_blank"
               rel="external nofollow noreferrer noopener"
+              data-cursor-hover
               ><i class="fab fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/arnaud-tessier-a9732b63/"
               target="_blank"
               rel="external nofollow noreferrer noopener"
+              data-cursor-hover
               ><i class="fab fa-linkedin"></i>
             </a>
             <a
               href="https://www.researchgate.net/profile/Arnaud_Tessier3"
               target="_blank"
               rel="external nofollow noreferrer noopener"
+              data-cursor-hover
               ><i class="fab fa-researchgate"></i>
             </a>
             <a
               href="https://www.instagram.com/arnaud_tessier.pro/?hl=fr"
               target="_blank"
               rel="external nofollow noreferrer noopener"
+              data-cursor-hover
               ><i class="fab fa-instagram-square"></i
             ></a>
           </div>
@@ -108,6 +112,7 @@
         <div class="d-flex flex-column item">
           <form
             class="contact-form"
+            autocomplete="off"
             id="contact-form"
             @submit.prevent="sendEmail"
           >
@@ -124,6 +129,7 @@
                 placeholder="Bruce WAYNE"
                 type="text"
                 name="user_name"
+                data-cursor-hidden
               ></b-form-input>
             </b-form-group>
 
@@ -142,7 +148,13 @@
                 placeholder="bruce-wayne@gmail.com"
                 type="email"
                 name="user_email"
+                data-cursor-hidden
+                :class="{
+                  'is-invalid': !validEmail(form.email) && emailTouched,
+                }"
+                @blur="emailTouched = true"
               ></b-form-input>
+              <div class="invalid-feedback">Un email valide est requis.</div>
             </b-form-group>
 
             <br />
@@ -159,12 +171,12 @@
                 rows="8"
                 no-resize
                 aria-invalid="Merci d'écrire votre message."
-                trim="true"
                 name="message"
+                data-cursor-hidden
               ></b-form-textarea>
             </b-form-group>
 
-            <button type="submit" value="Send" class="fancy">
+            <button type="submit" value="Send" class="fancy" data-cursor-hover>
               <span>Envoyer</span>
               <div class="icon-send">
                 <i class="far fa-paper-plane"></i>
@@ -189,19 +201,33 @@ export default {
   components: {
     BFormGroup,
     BFormInput,
-    BFormTextarea
+    BFormTextarea,
   },
   data() {
     return {
       form: {
         email: "",
-        name: ""
+        name: "",
+        message: "",
       },
-      show: true
+      show: true,
+      emailTouched: false,
     };
   },
   methods: {
-    sendEmail: e => {
+    validEmail(email) {
+      const checkEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return checkEmail.test(email.toLowerCase());
+    },
+    validForm() {
+      this.emailTouched = true;
+      if (this.validEmail(this.form.email)) {
+        return true;
+      }
+    },
+    sendEmail: (e) => {
+      e.preventDefault();
+      this.validEmail();
       emailjs
         .sendForm(
           "service_1psad01",
@@ -210,20 +236,20 @@ export default {
           "user_mLMGMiPv2dL6ne2OuuZNO"
         )
         .then(
-          result => {
+          (result) => {
             console.log("SUCCESS!", result.status, result.text);
             alert("Votre message a bien été envoyé !");
             const form = document.getElementById("contact-form");
             form.reset();
           },
-          error => {
+          (error) => {
             console.log("FAILED...", error);
             alert("Une erreur est survenue.");
           }
         );
-    }
+    },
   },
-  props: ["mode"]
+  props: ["mode"],
 };
 </script>
 
@@ -231,13 +257,42 @@ export default {
 @import "@/assets/scss/_variables.scss";
 @import "@/assets/scss/_responsive.scss";
 
-.formulaire{
+#textarea-no-resize:focus,
+#input-1:focus,
+#input-2:focus {
+  outline: none;
+}
+
+#textarea-no-resize:not(:focus):not(:placeholder-shown):valid,
+#input-1:not(:focus):not(:placeholder-shown):valid,
+#input-2:not(:focus):not(:placeholder-shown):valid {
+  border-color: rgb(32, 191, 107);
+  background-color: rgba(32, 191, 107, 0.1) !important;
+}
+
+.formulaire {
   border: 16px solid transparent;
-	border-image: 16 repeating-linear-gradient(-45deg, #D01F33 0, #D01F33 1em, transparent 0, transparent 2em,
-	              #3C4E82 0, #3C4E82 3em, transparent 0, transparent 4em);
-                
+  border-image: 16
+    repeating-linear-gradient(
+      -45deg,
+      #d01f33 0,
+      #d01f33 1em,
+      transparent 0,
+      transparent 2em,
+      #3c4e82 0,
+      #3c4e82 3em,
+      transparent 0,
+      transparent 4em
+    );
+
   padding-right: calc(6rem - 16px);
   padding-left: calc(5rem - 16px);
+}
+
+#input-1,
+#input-2,
+#textarea-no-resize {
+  cursor: text;
 }
 
 #contact-me {
@@ -522,7 +577,7 @@ hr {
   .fab {
     font-size: 3rem;
   }
-  .fancy{
+  .fancy {
     width: 175px;
   }
 }

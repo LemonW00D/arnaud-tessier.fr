@@ -1,182 +1,271 @@
 <template>
-  <div class="skills-page" style="padding-bottom: 3rem">
+  <div class="skills-page" style="padding-bottom: 3rem ; z-index:2">
     <div class="skills">
-        <ul class="lines">
-          <li class="line l--0">
-            <span class="line__label title">
-              Connaissance:
-            </span>
-          </li>
-          <li class="line l--25">
-            <span class="line__label l1">
-              Base
-            </span>
-          </li>
-          <li class="line l--50">
-            <span class="line__label l2">
-              Intermédiaire
-            </span>
-          </li>
-          <li class="line l--75">
-            <span class="line__label l1">
-              Maitrise
-            </span>
-          </li>
-          <li class="line l--100">
-            <span class="line__label l2">
-              Expert
-            </span>
-          </li>
-        </ul>
-        
-        <div class="charts">
-          <div class="chart chart--dev">
-            <span class="chart__title">Développement</span>
-            <ul class="chart--horiz">
-              <li class="chart__bar" style="width: 95%;" id="html">
-                <span class="chart__label">
-                  HTML5
-                  <img src="@/assets/img/html5.webp" alt="html">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="html" triggers="hover" placement="left">
-                 Langage de balisage conçu pour représenter les pages web.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 85%;" id="css">
-                <span class="chart__label">
-                  CSS3
-                  <img src="@/assets/img/css3.webp" alt="css">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="css" triggers="hover" placement="left">
-                 Langage de stylisation conçu pour présenter des documents HTML.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 70%;" id="sass">
-                <span class="chart__label">
-                  Sass
-                  <img src="@/assets/img/sass.webp" alt="sass" style="background-color: #eee">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="sass" triggers="hover" placement="left">
-                 Préprocesseur CSS.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 70%;" id="bootstrap">
-                <span class="chart__label">
-                  Bootstrap
-                  <img src="@/assets/img/bootstrap.webp" alt="bootstrap">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="bootstrap" triggers="hover" placement="left">
-                 Framework HTML - CSS.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 50%;" id="javascript">
-                <span class="chart__label">
-                  JavaScript ES6
-                  <img src="@/assets/img/javascript.webp" alt="javascript">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="javascript" triggers="hover" placement="left">
-                  Langage de programmation de scripts pour des pages web interactives.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 50%;" id="webpack">
-                <span class="chart__label">
-                  Webpack + Babel
-                  <img src="@/assets/img/webpack.webp" alt="webpack">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="webpack" triggers="hover" placement="left">
-                  Bundler de modules JavaScript et (rétro-)compatibilité.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 65%;" id="jquery">
-                <span class="chart__label">
-                  jQuery
-                  <img src="@/assets/img/jquery.webp" alt="jquery" style="width: 18px; height: 18px">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="jquery" triggers="hover" placement="left">
-                   Bibliothèque JavaScript pour les animations.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 65%;" id="vuejs">
-                <span class="chart__label">
-                  Vue.js
-                  <img src="@/assets/img/vuejs.webp" alt="vuejs">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="vuejs" triggers="hover" placement="left">
-                Framework JavaScript pour construire des interfaces utilisateur et des applications web monopages.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 75%;" id="bootstrap-vue">
-                <span class="chart__label">
-                  Bootstrap-vue
-                  <img src="@/assets/img/bootstrap-vue.webp" alt="bootstrap-vue">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="bootstrap-vue" triggers="hover" placement="left">
-                Framework Vue.js.
-              </b-tooltip>
-              <li class="chart__bar" style="width: 65%;" id="wordpress">
-                <span class="chart__label">
-                  Wordpress
-                  <img src="@/assets/img/wordpress.webp" alt="wordpress">
-                </span>
-              </li>
-              <b-tooltip custom-class="custom-tooltip" target="wordpress" triggers="hover" placement="left">
-                Système de gestion de contenu permettant de créer et gérer différents types de sites Web (vitrine, e-commerce...).
-              </b-tooltip>
-            </ul>
-          </div>
-          
-          <div class="chart chart--prod">
-            <span class="chart__title">Productivité</span>
-            <ul class="chart--horiz">
-            <li class="chart__bar" style="width: 60%;" id="git">
-              <span class="chart__label">
+      <ul class="lines">
+        <li class="line l--0">
+          <span class="line__label title">
+            Connaissance:
+          </span>
+        </li>
+        <li class="line l--25">
+          <span class="line__label l1">
+            Base
+          </span>
+        </li>
+        <li class="line l--50">
+          <span class="line__label l2">
+            Intermédiaire
+          </span>
+        </li>
+        <li class="line l--75">
+          <span class="line__label l1">
+            Maitrise
+          </span>
+        </li>
+        <li class="line l--100">
+          <span class="line__label l2">
+            Expert
+          </span>
+        </li>
+      </ul>
+
+      <div class="charts">
+        <div class="chart chart--dev">
+          <span class="chart__title">Développement</span>
+          <ul class="chart--horiz">
+            <li class="chart__bar" style="width: 95%;" id="html">
+              <span class="chart__label" data-cursor-hidden>
+                HTML5
+                <img src="@/assets/img/html5.webp" alt="html" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="html"
+              triggers="hover"
+              placement="left"
+            >
+              Langage de balisage conçu pour représenter les pages web.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 80%;" id="css">
+              <span class="chart__label" data-cursor-hidden>
+                CSS3
+                <img src="@/assets/img/css3.webp" alt="css" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="css"
+              triggers="hover"
+              placement="left"
+            >
+              Langage de stylisation conçu pour présenter des documents HTML.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 65%;" id="sass">
+              <span class="chart__label" data-cursor-hidden>
+                Sass
+                <img
+                  src="@/assets/img/sass.webp"
+                  alt="sass"
+                  style="background-color: #eee"
+                />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="sass"
+              triggers="hover"
+              placement="left"
+            >
+              Préprocesseur CSS.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 65%;" id="bootstrap">
+              <span class="chart__label" data-cursor-hidden>
+                Bootstrap
+                <img src="@/assets/img/bootstrap.webp" alt="bootstrap" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="bootstrap"
+              triggers="hover"
+              placement="left"
+            >
+              Framework HTML - CSS.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 50%;" id="javascript">
+              <span class="chart__label" data-cursor-hidden>
+                JavaScript ES6
+                <img src="@/assets/img/javascript.webp" alt="javascript" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="javascript"
+              triggers="hover"
+              placement="left"
+            >
+              Langage de programmation de scripts pour des pages web
+              interactives.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 50%;" id="webpack">
+              <span class="chart__label" data-cursor-hidden>
+                Webpack + Babel
+                <img src="@/assets/img/webpack.webp" alt="webpack" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="webpack"
+              triggers="hover"
+              placement="left"
+            >
+              Bundler de modules JavaScript et (rétro-)compatibilité.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 65%;" id="jquery">
+              <span class="chart__label" data-cursor-hidden>
+                jQuery
+                <img
+                  src="@/assets/img/jquery.webp"
+                  alt="jquery"
+                  style="width: 18px; height: 18px"
+                />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="jquery"
+              triggers="hover"
+              placement="left"
+            >
+              Bibliothèque JavaScript pour les animations.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 55%;" id="vuejs">
+              <span class="chart__label" data-cursor-hidden>
+                Vue.js
+                <img src="@/assets/img/vuejs.webp" alt="vuejs" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="vuejs"
+              triggers="hover"
+              placement="left"
+            >
+              Framework JavaScript pour construire des interfaces utilisateur et
+              des applications web monopages.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 70%;" id="bootstrap-vue">
+              <span class="chart__label" data-cursor-hidden>
+                Bootstrap-vue
+                <img
+                  src="@/assets/img/bootstrap-vue.webp"
+                  alt="bootstrap-vue"
+                />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="bootstrap-vue"
+              triggers="hover"
+              placement="left"
+            >
+              Framework Vue.js.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 65%;" id="wordpress">
+              <span class="chart__label" data-cursor-hidden>
+                Wordpress
+                <img src="@/assets/img/wordpress.webp" alt="wordpress" />
+              </span>
+            </li>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="wordpress"
+              triggers="hover"
+              placement="left"
+            >
+              Système de gestion de contenu permettant de créer et gérer
+              différents types de sites Web (vitrine, e-commerce...).
+            </b-tooltip>
+          </ul>
+        </div>
+
+        <div class="chart chart--prod">
+          <span class="chart__title">Productivité</span>
+          <ul class="chart--horiz">
+            <li class="chart__bar" style="width: 50%;" id="git">
+              <span class="chart__label" data-cursor-hidden>
                 Git + Github
-                <img src="@/assets/img/github.webp" alt="github">
+                <img src="@/assets/img/github.webp" alt="github" />
               </span>
             </li>
-            <b-tooltip custom-class="custom-tooltip" target="git" triggers="hover" placement="left">
-                Logiciel de gestion de versions décentralisé et service d'hébergement.
-              </b-tooltip>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="git"
+              triggers="hover"
+              placement="left"
+            >
+              Logiciel de gestion de versions décentralisé et service
+              d'hébergement.
+            </b-tooltip>
             <li class="chart__bar" style="width: 90%;" id="microsoft">
-              <span class="chart__label">
+              <span class="chart__label" data-cursor-hidden>
                 Microsoft Office
-                <img src="@/assets/img/microsoft.webp" alt="microsoft">
+                <img src="@/assets/img/microsoft.webp" alt="microsoft" />
               </span>
             </li>
-            <b-tooltip custom-class="custom-tooltip" target="microsoft" triggers="hover" placement="left">
-                Suite bureautique.
-              </b-tooltip>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="microsoft"
+              triggers="hover"
+              placement="left"
+            >
+              Suite bureautique.
+            </b-tooltip>
           </ul>
-          </div>
-          
-          <div class="chart chart--design">
-            <span class="chart__title">Design</span>
-            <ul class="chart--horiz">
+        </div>
+
+        <div class="chart chart--design">
+          <span class="chart__title">Design</span>
+          <ul class="chart--horiz">
             <li class="chart__bar" style="width: 40%;" id="lunacy">
-              <span class="chart__label">
+              <span class="chart__label" data-cursor-hidden>
                 Lunacy
-                <img src="@/assets/img/lunacy.webp" alt="lunacy">
+                <img src="@/assets/img/lunacy.webp" alt="lunacy" />
               </span>
             </li>
-            <b-tooltip custom-class="custom-tooltip" target="lunacy" triggers="hover" placement="left">
-                Logiciel de conception graphique avec actifs intégrés.
-              </b-tooltip>
-            <li class="chart__bar" style="width: 75%;" id="ux">
-              <span class="chart__label">
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="lunacy"
+              triggers="hover"
+              placement="left"
+            >
+              Logiciel de conception graphique avec actifs intégrés.
+            </b-tooltip>
+            <li class="chart__bar" style="width: 55%;" id="ux">
+              <span class="chart__label" data-cursor-hidden>
                 User Experience
-                <img src="@/assets/img/ux.webp" alt="ux">
+                <img src="@/assets/img/ux.webp" alt="ux" />
               </span>
             </li>
-            <b-tooltip custom-class="custom-tooltip" target="ux" triggers="hover" placement="left">
-                Qualité du vécu de l'utilisateur face à des environnements numériques (ergonomie et utilisabilité).
-              </b-tooltip>
+            <b-tooltip
+              custom-class="custom-tooltip"
+              target="ux"
+              triggers="hover"
+              placement="left"
+            >
+              Qualité du vécu de l'utilisateur face à des environnements
+              numériques (ergonomie et utilisabilité).
+            </b-tooltip>
           </ul>
-          </div>
         </div>
       </div>
-    
-    <div class="d-flex flex-column justify-content-center" style="margin: auto 3rem;">
+    </div>
+
+    <div
+      class="d-flex flex-column justify-content-center"
+      style="margin: auto 3rem;"
+    >
       <div class="cv-download" style="margin: auto">
         <a
           download="Arnaud_TESSIER_CV.pdf"
@@ -188,68 +277,104 @@
           data-loading="document-download"
           data-disable="document-download"
           aria-pressed="false"
-          >télécharger mon cv</a>
-        <br>
+          data-cursor-hidden
+          >télécharger mon cv</a
+        >
+        <br />
       </div>
       <div class="formations-links">
-        <h5>Certifications</h5>  
-        <div><i class="fas fa-external-link-alt"></i><a href="https://www.codecademy.com/profiles/LemonW00D" target="_blank">Codecademy</a></div>
-        <div><i class="fas fa-external-link-alt"></i><a href="https://dyma.fr/developer/5e4cfe9660a2e83ad0ddd6b2" target="_blank">Dyma</a></div>
-        <div><i class="fas fa-external-link-alt"></i><a href="https://www.linkedin.com/in/arnaud-tessier-a9732b63/" target="_blank">LinkedIn</a></div>
+        <h5>Certifications</h5>
+        <div>
+          <i class="fas fa-external-link-alt"></i
+          ><a
+            href="https://www.codecademy.com/profiles/LemonW00D"
+            target="_blank"
+            data-cursor-hidden
+            >Codecademy</a
+          >
+        </div>
+        <div>
+          <i class="fas fa-external-link-alt"></i
+          ><a
+            href="https://dyma.fr/developer/5e4cfe9660a2e83ad0ddd6b2"
+            target="_blank"
+            data-cursor-hidden
+            >Dyma</a
+          >
+        </div>
+        <div>
+          <i class="fas fa-external-link-alt"></i
+          ><a
+            href="https://www.linkedin.com/in/arnaud-tessier-a9732b63/"
+            target="_blank"
+            data-cursor-hidden
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </div>
 
-    <div class="competences">									
-				<h4>Domaines de compétences</h4>
-				<ul class="list-unstyled list">
-					<li>
-						<i class="far fa-check-circle"></i><strong>Réalisation de projets web</strong>
-						<br>
-						<em>Site vitrine, évènementiel, portfolio, e-commerce.</em>
-					</li>
-					<li>
-						<i class="far fa-check-circle"></i><strong>Conception graphique &amp; Webdesign</strong>
-						<br>
-						<em>Logo, couleurs, maquette Web.</em>											
-					</li>
-          <li>
-						<i class="far fa-check-circle"></i><strong>Gestion de CMS</strong> 
-						<br>
-						<em>WordPress.</em>											
-					</li>			
-					<li>
-						<i class="far fa-check-circle"></i><strong> Intégration HTML - CSS</strong>
-						<br>
-						<em>Codage à la main respectueux des standards du Web (W3C).</em>
-					</li>
-					<li>
-						<i class="far fa-check-circle"></i><strong>Pages dynamiques par JavaScript</strong> 
-						<br>
-						<em>jQuery, Vue.js.</em>
-					</li>
-					<li>
-						<i class="far fa-check-circle"></i><strong>Référencement naturel SEO</strong>
-						<br>
-						<em>Accessibilité &amp; ergonomie des pages web, indexation Google (htaccess et sitemap).</em>											
-					</li>
-					<li>
-						<i class="far fa-check-circle"></i><strong>Conception multi-plateformes</strong>
-						<br>
-						<em>Compatible tous supports: ordinateurs, tablettes &amp; smartphones.</em>
-					</li>
-				</ul>
-			</div>
-
-
+    <div class="competences">
+      <h4>Domaines de compétences</h4>
+      <ul class="list-unstyled list">
+        <li>
+          <i class="far fa-check-circle"></i
+          ><strong>Réalisation de projets web</strong>
+          <br />
+          <em>Site vitrine, évènementiel, portfolio, e-commerce.</em>
+        </li>
+        <li>
+          <i class="far fa-check-circle"></i
+          ><strong>Conception graphique &amp; Webdesign</strong>
+          <br />
+          <em>Logo, couleurs, maquette Web.</em>
+        </li>
+        <li>
+          <i class="far fa-check-circle"></i><strong>Gestion de CMS</strong>
+          <br />
+          <em>WordPress.</em>
+        </li>
+        <li>
+          <i class="far fa-check-circle"></i
+          ><strong> Intégration HTML - CSS</strong>
+          <br />
+          <em>Codage à la main respectueux des standards du Web (W3C).</em>
+        </li>
+        <li>
+          <i class="far fa-check-circle"></i
+          ><strong>Pages dynamiques par JavaScript</strong>
+          <br />
+          <em>jQuery, Vue.js.</em>
+        </li>
+        <li>
+          <i class="far fa-check-circle"></i
+          ><strong>Référencement naturel SEO</strong>
+          <br />
+          <em
+            >Accessibilité &amp; ergonomie des pages web, indexation Google
+            (htaccess et sitemap).</em
+          >
+        </li>
+        <li>
+          <i class="far fa-check-circle"></i
+          ><strong>Conception multi-plateformes</strong>
+          <br />
+          <em
+            >Compatible tous supports: ordinateurs, tablettes &amp;
+            smartphones.</em
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Vue from "vue";
+import BootstrapVue from "bootstrap-vue";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(BootstrapVue);
-import { BTooltip } from 'bootstrap-vue';
+import { BTooltip } from "bootstrap-vue";
 
 export default {
   name: "Skills",
@@ -259,7 +384,7 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
@@ -267,7 +392,7 @@ export default {
 @import "@/assets/scss/_variables.scss";
 @import "@/assets/scss/_responsive.scss";
 
-.skills-page{
+.skills-page {
   min-height: 90vh;
   display: flex;
   flex-direction: row;
@@ -306,7 +431,8 @@ $chartBarGap: 10px;
   width: 60%;
   max-width: 625px;
   height: 780px;
-  height: $totalChartCount * ($chartBarHeight + $chartBarGap) + ($chartCount * ($chartGap + $titleHeight));
+  height: $totalChartCount * ($chartBarHeight + $chartBarGap) +
+    ($chartCount * ($chartGap + $titleHeight));
   margin: auto auto auto 22rem;
   position: relative;
 }
@@ -385,7 +511,7 @@ $chartBarGap: 10px;
   overflow: hidden;
 }
 
-.custom-tooltip{
+.custom-tooltip {
   font-size: 1.4rem;
 }
 
@@ -416,7 +542,7 @@ $chartBarGap: 10px;
   color: white;
   cursor: help;
 
-  img{
+  img {
     height: 23px;
     width: 23px;
     margin-left: 0.5rem;
@@ -447,6 +573,7 @@ $chartBarGap: 10px;
   border-radius: 5px;
 
   a {
+    cursor: url("https://img.icons8.com/officel/50/000000/export-pdf.png"), auto;
     text-transform: uppercase;
     text-align: center;
     width: 110px;
@@ -507,14 +634,14 @@ $chartBarGap: 10px;
   }
 }
 
-.formations-links{
+.formations-links {
   margin: 4.5rem auto auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  div{
+  div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -523,32 +650,36 @@ $chartBarGap: 10px;
     align-content: flex-start;
   }
 
-  i{
+  a {
+    cursor: pointer;
+  }
+
+  i {
     width: 10px;
     font-size: 1rem;
     margin-right: 1rem;
   }
 }
 
-.competences{
+.competences {
   margin: auto;
 
-  h4{
+  h4 {
     margin-bottom: 3rem;
   }
 
-  i{
+  i {
     margin-right: 1.5rem;
   }
 
-  strong{
+  strong {
     color: $dark-blue;
   }
 
-  ul > li > em{
+  ul > li > em {
     margin-left: 3rem;
 
-    &:after{
+    &:after {
       bottom: -2px;
       left: 0;
       display: block;
@@ -564,20 +695,20 @@ $chartBarGap: 10px;
 @include xxl {
 }
 @include xl {
-  .skills-page{
+  .skills-page {
     flex-direction: column;
   }
-  
-  .skills{
+
+  .skills {
     margin: 0 1rem;
     width: 90%;
   }
 
-  .cv-download{
+  .cv-download {
     margin-top: 8rem !important;
   }
 
-  .formations-links{
+  .formations-links {
     margin-bottom: 8rem !important;
   }
 }
@@ -585,24 +716,26 @@ $chartBarGap: 10px;
 @include md {
 }
 @include sm {
-  .lines{
-    .title, .l1, .l2{
+  .lines {
+    .title,
+    .l1,
+    .l2 {
       font-size: 1.3rem;
     }
   }
 }
 @include xs {
-  .custom-tooltip{
+  .custom-tooltip {
     font-size: 1.1rem;
   }
-  .competences{
+  .competences {
     margin: auto 1.5rem;
   }
-  .lines{
-    .title{
+  .lines {
+    .title {
       display: none;
     }
-    .l2{
+    .l2 {
       bottom: 1rem;
       text-align: start;
       right: -7rem;

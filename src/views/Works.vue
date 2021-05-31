@@ -1,7 +1,7 @@
 <template>
   <div
     class="leftside d-flex flex-column justify-content-center align-items-center px-5"
-    style="padding-top: 3rem"
+    style="padding-top: 3rem ; z-index:2"
   >
     <section class="row projects" id="start-projects">
       <!-- WWW.ARNAUD-TESSIER.FR -->
@@ -23,12 +23,14 @@
                 class="btn btn-default btn-proj"
                 href="http://www.arnaud-tessier.fr"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fas fa-globe"></i>Site Web</a
               >
               <a
                 class="btn btn-default btn-code"
                 href="https://github.com/LemonW00D/arnaud-tessier.fr"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fab fa-github"></i>Code Source</a
               >
             </div>
@@ -37,16 +39,20 @@
                 v-b-toggle.sidebar-right-1
                 id="bouton-sidebar"
                 class="hvr-border-fade"
+                data-cursor-hover
                 >Plus d'informations</b-button
               >
             </div>
           </div>
         </div>
       </div>
-      <b-sidebar id="sidebar-right-1" title="Sidebar" right shadow>
+      <b-sidebar id="sidebar-right-1" title="Sidebar" right shadow lazy>
         <div class="px-3">
           <h4>Arnaud Tessier</h4>
-          <a href="http://www.arnaud-tessier.fr" target="_blank"
+          <a
+            href="http://www.arnaud-tessier.fr"
+            target="_blank"
+            data-cursor-hidden
             >www.arnaud-tessier.fr</a
           >
           <img
@@ -106,6 +112,7 @@
                 <a
                   href="https://gtmetrix.com/reports/www.arnaud-tessier.fr/eOfcG1sj"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Performance:</b
                     ><span class="metrix"> GTmetrix = A (94%)</span>
@@ -116,6 +123,7 @@
                 <a
                   href="https://www.ssllabs.com/ssltest/analyze.html?d=www.arnaud-tessier.fr"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Sécurité:</b
                     ><span class="ssl"> SSL Labs = A+</span>
@@ -126,6 +134,7 @@
                 <a
                   href="https://developers.google.com/speed/pagespeed/insights/?hl=fr&url=https%3A%2F%2Fwww.arnaud-tessier.fr&tab=desktop"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Vitesse:</b
                     ><span class="speed"> PageSpeed = 92%</span>
@@ -156,12 +165,14 @@
                 class="btn btn-default btn-proj"
                 href="http://www.raphaelvincenot.com"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fas fa-globe"></i>Site Web</a
               >
               <a
                 class="btn btn-default btn-code"
                 href="https://github.com/LemonW00D/Raphael-Vincenot"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fab fa-github"></i>Code Source</a
               >
             </div>
@@ -170,16 +181,20 @@
                 v-b-toggle.sidebar-right-2
                 id="bouton-sidebar"
                 class="hvr-border-fade"
+                data-cursor-hover
                 >Plus d'informations</b-button
               >
             </div>
           </div>
         </div>
       </div>
-      <b-sidebar id="sidebar-right-2" title="Sidebar" right shadow>
+      <b-sidebar id="sidebar-right-2" title="Sidebar" right shadow lazy>
         <div class="px-3">
           <h4>Raphaël Vincenot</h4>
-          <a href="http://www.raphaelvincenot.com" target="_blank"
+          <a
+            href="http://www.raphaelvincenot.com"
+            target="_blank"
+            data-cursor-hidden
             >www.raphaelvincenot.com</a
           >
           <img
@@ -238,6 +253,7 @@
                 <a
                   href="https://gtmetrix.com/?url=http://www.raphaelvincenot.com"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Performance:</b
                     ><span class="metrix"> GTmetrix = A (95%)</span>
@@ -248,6 +264,7 @@
                 <a
                   href="https://www.ssllabs.com/ssltest/analyze.html?d=www.raphaelvincenot.com"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Sécurité:</b
                     ><span class="ssl">
@@ -260,6 +277,7 @@
                 <a
                   href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.raphaelvincenot.com%2F&hl=fr&tab=desktop"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Vitesse:</b
                     ><span class="speed">
@@ -289,12 +307,14 @@
                 class="btn btn-default btn-proj"
                 href="http://www.kirolasante.fr"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fas fa-globe"></i>Site Web</a
               >
               <a
                 class="btn btn-default btn-code"
                 href="https://github.com/LemonW00D/kirola_sante"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fab fa-github"></i>Code Source</a
               >
             </div>
@@ -303,16 +323,17 @@
                 v-b-toggle.sidebar-right-3
                 id="bouton-sidebar"
                 class="hvr-border-fade"
+                data-cursor-hover
                 >Plus d'informations</b-button
               >
             </div>
           </div>
         </div>
       </div>
-      <b-sidebar id="sidebar-right-3" title="Sidebar" right shadow>
+      <b-sidebar id="sidebar-right-3" title="Sidebar" right shadow lazy>
         <div class="px-3">
           <h4>Kirola Santé</h4>
-          <a href="http://www.kirolasante.fr" target="_blank"
+          <a href="http://www.kirolasante.fr" target="_blank" data-cursor-hidden
             >www.kirolasante.fr</a
           >
           <img
@@ -372,6 +393,7 @@
                 <a
                   href="https://gtmetrix.com/?url=http://www.kirolasante.fr"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Performance:</b
                     ><span class="metrix"> GTmetrix = A (96%)</span>
@@ -382,6 +404,7 @@
                 <a
                   href="https://www.ssllabs.com/ssltest/analyze.html?d=www.kirolasante.fr"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Sécurité:</b
                     ><span class="ssl">
@@ -394,6 +417,7 @@
                 <a
                   href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kirolasante.fr%2F&tab=desktop&hl=fr"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Vitesse:</b
                     ><span class="speed"> PageSpeed = 94%</span>
@@ -424,12 +448,14 @@
                 class="btn btn-default btn-proj"
                 href="https://www.guillaumelavrilleux.com"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fas fa-globe"></i>Site Web</a
               >
               <a
                 class="btn btn-default btn-code"
                 href="https://github.com/LemonW00D/Guillaume-Lavrilleux"
                 target="_blank"
+                data-cursor-hidden
                 ><i class="fab fa-github"></i>Code Source</a
               >
             </div>
@@ -438,16 +464,20 @@
                 v-b-toggle.sidebar-right-4
                 id="bouton-sidebar"
                 class="hvr-border-fade"
+                data-cursor-hover
                 >Plus d'informations</b-button
               >
             </div>
           </div>
         </div>
       </div>
-      <b-sidebar id="sidebar-right-4" title="Sidebar" right shadow>
+      <b-sidebar id="sidebar-right-4" title="Sidebar" right shadow lazy>
         <div class="px-3">
           <h4>Guillaume Lavrilleux</h4>
-          <a href="https://www.guillaumelavrilleux.com" target="_blank"
+          <a
+            href="https://www.guillaumelavrilleux.com"
+            target="_blank"
+            data-cursor-hidden
             >www.guillaumelavrilleux.com</a
           >
           <img
@@ -507,6 +537,7 @@
                 <a
                   href="https://gtmetrix.com/?url=https://www.guillaumelavrilleux.com"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Performance:</b
                     ><span class="metrix"> GTmetrix = A (98%)</span>
@@ -517,6 +548,7 @@
                 <a
                   href="https://www.ssllabs.com/ssltest/analyze.html?d=www.guillaumelavrilleux.com"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Sécurité:</b
                     ><span class="ssl"> SSL Labs = A+</span>
@@ -527,6 +559,7 @@
                 <a
                   href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.guillaumelavrilleux.com%2F&tab=desktop&hl=fr"
                   target="_blank"
+                  data-cursor-hidden
                   ><p>
                     <i class="far fa-plus-square"></i><b>Vitesse:</b
                     ><span class="speed"> PageSpeed = 86%</span>
@@ -553,33 +586,36 @@
             <div
               class="d-flex flex-row justify-content-around align-item-center py-2"
             >
-              <p
-                style="padding: .375rem .75rem; color: grey; text-align: center"
+              <a
+                class="btn btn-default btn-proj"
+                href="https://www.bloom-ateliers.fr"
+                target="_blank"
+                data-cursor-hidden
               >
                 <i class="fas fa-globe"></i>Site Web
-              </p>
-              <p
-                style="padding: .375rem .75rem; color: grey; text-align: center"
-              >
-                <i class="fab fa-github"></i>Code Source
-              </p>
+              </a>
             </div>
             <div>
               <b-button
                 v-b-toggle.sidebar-right-5
                 id="bouton-sidebar"
                 class="hvr-border-fade"
+                data-cursor-hover
                 >Plus d'informations</b-button
               >
             </div>
           </div>
         </div>
       </div>
-      <b-sidebar id="sidebar-right-5" title="Sidebar" right shadow>
+      <b-sidebar id="sidebar-right-5" title="Sidebar" right shadow lazy>
         <div class="px-3">
           <h4>Bloom Ateliers</h4>
-          <p>Développement en local avec MAMP</p>
-          <!--<a href="https://www.guillaumelavrilleux.com" target="_blank">www.guillaumelavrilleux.com</a>-->
+          <a
+            href="https://www.bloom-ateliers.fr"
+            target="_blank"
+            data-cursor-hidden
+            >www.bloom-ateliers.fr</a
+          >
           <img
             src="@/assets/img/bloom-ateliers-sidebar.jpg"
             alt="Bloom Ateliers"
@@ -615,9 +651,9 @@
           <div class="projectPills timing pt-4">
             <p>
               <i class="far fa-calendar-alt"></i> Date:
-              <span>Décembre 2020</span>
+              <span>Juin 2021</span>
             </p>
-            <p><i class="fas fa-stopwatch"></i> Durée: <span>en cours</span></p>
+            <p><i class="fas fa-stopwatch"></i> Durée: <span>3 mois</span></p>
           </div>
           <hr />
           <h5>Technologies utilisées</h5>
@@ -635,9 +671,9 @@
           <h5>Scores performance/sécurité</h5>
           <div class="projectPills pt-4">
             <ul>
-              <li><a href="https://gtmetrix.com/?url=https://www.guillaumelavrilleux.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (98%)</span></p></a></li>
-              <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.guillaumelavrilleux.com" target="_blank"><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A+</span></p></a></li>
-              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.guillaumelavrilleux.com%2F&tab=desktop&hl=fr" target="_blank"><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 86%</span></p></a></li>
+              <li><a href="https://gtmetrix.com/?url=https://www.bloom-ateliers.fr" target="_blank" data-cursor-hidden><p><i class="far fa-plus-square"></i><b>Performance:</b><span class="metrix"> GTmetrix = A (98%)</span></p></a></li>
+              <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.bloom-ateliers.fr" target="_blank" data-cursor-hidden><p><i class="far fa-plus-square"></i><b>Sécurité:</b><span class="ssl"> SSL Labs = A+</span></p></a></li>
+              <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.bloom-ateliers.fr%2F&tab=desktop&hl=fr" target="_blank" data-cursor-hidden><p><i class="far fa-plus-square"></i><b>Vitesse:</b><span class="speed"> PageSpeed = 86%</span></p></a></li>
             </ul>
           </div>
           -->

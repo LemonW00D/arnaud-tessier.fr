@@ -4,6 +4,7 @@
     <div class="d-flex flex-column w-100">
       <the-header></the-header>
       <router-view></router-view>
+      <cursor-fx ref="cursor" disabled />
     </div>
   </div>
 </template>
@@ -11,12 +12,23 @@
 <script>
 import Preloader from "@/components/Preloader";
 import TheHeader from "@/components/TheHeader";
+import { CursorFx } from "@luxdamore/vue-cursor-fx";
 
 export default {
   name: "App",
   components: {
     Preloader,
-    TheHeader
+    TheHeader,
+    "cursor-fx": CursorFx,
+  },
+  mounted() {
+    this.$refs.cursor.start();
+  },
+  methods: {
+    others() {
+      this.$refs.cursor.destroy();
+      this.$refs.cursor.refresh();
+    },
   },
 };
 </script>

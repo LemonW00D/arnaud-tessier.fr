@@ -23,8 +23,14 @@ const router = new VueRouter({
     { path: "/contact", name: "Contact", component: Contact },
     { path: "**", redirect: "/home" },
     { path: "*", redirect: "/home" },
-    { path: "", redirect: "/home" }
-  ]
+    { path: "", redirect: "/home" },
+  ],
+  scrollBehavior() {
+    return {
+      x: 0,
+      y: 0,
+    };
+  },
 });
 
 export default router;

@@ -1,16 +1,13 @@
-$background-light: #F0F2F5;
+$background-light: #f7fafb; /*#f0f2f5;*/
 $dark-blue: #012436;
-$yellow: #C2A40E;
-$yellow-10: #EBEADE;
+$yellow: #c2a40e;
+$yellow-10: #ebeade;
 $shadow-card: 0 20px 25px -15px $dark-blue;
-$text-white: #FFFFFF;
-$background-darkmode: rgba(7, 41, 57, .95);
-$red: #B15947;
-$red-10: RGBA(177,89,71,0.25);
+$text-white: #ffffff;
+$background-darkmode: rgba(7, 41, 57, 0.95);
+$red: #b15947;
+$red-10: RGBA(177, 89, 71, 0.25);
 $dark: #111;
-
-
-
 
 $background-dark: #353535;
 
@@ -24,241 +21,249 @@ $light-blue: #90cef1;
 $green: #029946;
 
 $box-shadow-card: 0 20px 25px -15px $light-primary;
-$box-shadow: inset 0 -1px 3px 1px rgba(0,0,0,.05);
+$box-shadow: inset 0 -1px 3px 1px rgba(0, 0, 0, 0.05);
 $text-shadow: 2px 2px 2px $dark;
 $title-shadow: 1px 1px 1px $dark-blue;
 
 $border-card: 1px solid $gray;
 
-
-
 .fancy {
-    margin: 2rem auto 1rem auto;
-    border: 2px solid $dark-blue;
-    background-color: $dark-blue;
-    color: $text-white;
-    font-size: 1.75rem;                  
-    padding: 1.25rem 2.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    width: 200px;
+  margin: 2rem auto 1rem auto;
+  border: 2px solid $dark-blue;
+  background-color: $dark-blue;
+  color: $text-white;
+  font-size: 1.75rem;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 200px;
+  cursor: none;
 }
 
 .fancy span {
-    width: 72%;
-    left: 0px;
-    text-align: start;
+  width: 72%;
+  left: 0px;
+  text-align: start;
 }
 
 .fancy:hover span {
-    left: -72%;
-    right: 100%;
-    width: 0px;
-    white-space: nowrap;
-    transition: all 400ms ease-in-out 175ms;
+  left: -72%;
+  right: 100%;
+  width: 0px;
+  white-space: nowrap;
+  transition: all 400ms ease-in-out 175ms;
 }
-  
+
 .fancy .icon-send {
-    text-align: center;
-    padding: 0.1rem 0;
-    right: 0;
-    width: 28%;
-    background-color: $dark-blue;
+  text-align: center;
+  padding: 0.1rem 0;
+  right: 0;
+  width: 28%;
+  background-color: $dark-blue;
 }
-  
+
 .fancy:hover .icon-send {
-    right: 0;
-    left: 0;
-    width: 100%;
-    transition: all 400ms ease-in-out 175ms;
+  right: 0;
+  left: 0;
+  width: 100%;
+  transition: all 400ms ease-in-out 175ms;
 }
 
 .fancy:focus {
-    opacity: 0.90;
+  opacity: 0.9;
 }
 
-
 .continue-application {
-    --color: #fff;
-    --background: #404660;
-    --background-hover: #3A4059;
-    --background-left: #2B3044;
-    --folder: #F3E9CB;
-    --folder-inner: #BEB393;
-    --paper: #FFFFFF;
-    --paper-lines: #BBC1E1;
-    --paper-behind: #E1E6F9;
-    --pencil-cap: #fff;
-    --pencil-top: #275EFE;
-    --pencil-middle: #fff;
-    --pencil-bottom: #5C86FF;
-    --shadow: rgba(13, 15, 25, .2);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 19px;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    padding: 17px 29px 17px 69px;
-    transition: background .3s;
-    color: var(--color);
-    background: var(--bg, var(--background));
-    & > div {
-        top: 0;
+  --color: #fff;
+  --background: #404660;
+  --background-hover: #3a4059;
+  --background-left: #2b3044;
+  --folder: #f3e9cb;
+  --folder-inner: #beb393;
+  --paper: #ffffff;
+  --paper-lines: #bbc1e1;
+  --paper-behind: #e1e6f9;
+  --pencil-cap: #fff;
+  --pencil-top: #275efe;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5c86ff;
+  --shadow: rgba(13, 15, 25, 0.2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  background: var(--bg, var(--background));
+  & > div {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 53px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    background: var(--background-left);
+    .folder {
+      width: 23px;
+      height: 27px;
+      position: absolute;
+      left: 15px;
+      top: 13px;
+      .top {
         left: 0;
-        bottom: 0;
-        width: 53px;
+        top: 0;
+        z-index: 2;
         position: absolute;
-        overflow: hidden;
-        border-radius: 5px 0 0 5px;
-        background: var(--background-left);
-        .folder {
-            width: 23px;
-            height: 27px;
-            position: absolute;
-            left: 15px;
-            top: 13px;
-            .top {
-                left: 0;
-                top: 0;
-                z-index: 2;
-                position: absolute;
-                transform: translateX(var(--fx, 0));
-                transition: transform .4s ease var(--fd, .3s);
-                svg {
-                    width: 24px;
-                    height: 27px;
-                    display: block;
-                    fill: var(--folder);
-                    transform-origin: 0 50%;
-                    transition: transform .3s ease var(--fds, .45s);
-                    transform: perspective(120px) rotateY(var(--fr, 0deg));
-                }
-            }
-            &:before,
-            &:after,
-            .paper {
-                content: '';
-                position: absolute;
-                left: var(--l, 0);
-                top: var(--t, 0);
-                width: var(--w, 100%);
-                height: var(--h, 100%);
-                border-radius: 1px;
-                background: var(--b, var(--folder-inner));
-            }
-            &:before {
-                box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
-                transform: translateX(var(--fx, 0));
-                transition: transform .4s ease var(--fd, .3s);
-            }
-            &:after,
-            .paper {
-                --l: 1px;
-                --t: 1px;
-                --w: 21px;
-                --h: 25px;
-                --b: var(--paper-behind);
-            }
-            &:after {
-                transform: translate(var(--pbx, 0), var(--pby, 0));
-                transition: transform .4s ease var(--pbd, 0s);
-            }
-            .paper {
-                z-index: 1;
-                --b: var(--paper);
-                &:before,
-                &:after {
-                    content: '';
-                    width: var(--wp, 14px);
-                    height: 2px;
-                    border-radius: 1px;
-                    transform: scaleY(.5);
-                    left: 3px;
-                    top: var(--tp, 3px);
-                    position: absolute;
-                    background: var(--paper-lines);
-                    box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
-                }
-                &:after {
-                    --tp: 6px;
-                    --wp: 10px;
-                }
-            }
+        transform: translateX(var(--fx, 0));
+        transition: transform 0.4s ease var(--fd, 0.3s);
+        svg {
+          width: 24px;
+          height: 27px;
+          display: block;
+          fill: var(--folder);
+          transform-origin: 0 50%;
+          transition: transform 0.3s ease var(--fds, 0.45s);
+          transform: perspective(120px) rotateY(var(--fr, 0deg));
         }
-        .pencil {
-            height: 2px;
-            width: 3px;
-            border-radius: 1px 1px 0 0;
-            top: 8px;
-            left: 105%;
-            position: absolute;
-            z-index: 3;
-            transform-origin: 50% 19px;
-            background: var(--pencil-cap);
-            transform: translateX(var(--pex, 0)) rotate(35deg);
-            transition: transform .4s ease var(--pbd, 0s);
-            &:before,
-            &:after {
-                content: '';
-                position: absolute;
-                display: block;
-                background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
-                width: var(--w, 5px);
-                height: var(--h, 20px);
-                border-radius: var(--br, 2px 2px 0 0);
-                top: var(--t, 2px);
-                left: var(--l, -1px);
-            }
-            &:before {
-                clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
-            }
-            &:after {
-                --b: none;
-                --w: 3px;
-                --h: 6px;
-                --br: 0 2px 1px 0;
-                --t: 3px;
-                --l: 3px;
-                border-top: 1px solid var(--pencil-top);
-                border-right: 1px solid var(--pencil-top);
-            }
-        }
-    }
-    &:before,
-    &:after {
-        content: '';
+      }
+      &:before,
+      &:after,
+      .paper {
+        content: "";
         position: absolute;
-        width: 10px;
-        height: 2px;
+        left: var(--l, 0);
+        top: var(--t, 0);
+        width: var(--w, 100%);
+        height: var(--h, 100%);
         border-radius: 1px;
-        background: var(--color);
-        transform-origin: 9px 1px;
-        transform: translateX(var(--cx, 0)) scale(.5) rotate(var(--r, -45deg));
-        top: 26px;
-        right: 16px;
-        transition: transform .3s;
+        background: var(--b, var(--folder-inner));
+      }
+      &:before {
+        box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow),
+          0 3.5px 7px var(--shadow);
+        transform: translateX(var(--fx, 0));
+        transition: transform 0.4s ease var(--fd, 0.3s);
+      }
+      &:after,
+      .paper {
+        --l: 1px;
+        --t: 1px;
+        --w: 21px;
+        --h: 25px;
+        --b: var(--paper-behind);
+      }
+      &:after {
+        transform: translate(var(--pbx, 0), var(--pby, 0));
+        transition: transform 0.4s ease var(--pbd, 0s);
+      }
+      .paper {
+        z-index: 1;
+        --b: var(--paper);
+        &:before,
+        &:after {
+          content: "";
+          width: var(--wp, 14px);
+          height: 2px;
+          border-radius: 1px;
+          transform: scaleY(0.5);
+          left: 3px;
+          top: var(--tp, 3px);
+          position: absolute;
+          background: var(--paper-lines);
+          box-shadow: 0 12px 0 0 var(--paper-lines),
+            0 24px 0 0 var(--paper-lines);
+        }
+        &:after {
+          --tp: 6px;
+          --wp: 10px;
+        }
+      }
     }
-    &:after {
-        --r: 45deg;
+    .pencil {
+      height: 2px;
+      width: 3px;
+      border-radius: 1px 1px 0 0;
+      top: 8px;
+      left: 105%;
+      position: absolute;
+      z-index: 3;
+      transform-origin: 50% 19px;
+      background: var(--pencil-cap);
+      transform: translateX(var(--pex, 0)) rotate(35deg);
+      transition: transform 0.4s ease var(--pbd, 0s);
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: var(
+          --b,
+          linear-gradient(
+            var(--pencil-top) 55%,
+            var(--pencil-middle) 55.1%,
+            var(--pencil-middle) 60%,
+            var(--pencil-bottom) 60.1%
+          )
+        );
+        width: var(--w, 5px);
+        height: var(--h, 20px);
+        border-radius: var(--br, 2px 2px 0 0);
+        top: var(--t, 2px);
+        left: var(--l, -1px);
+      }
+      &:before {
+        clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+      }
+      &:after {
+        --b: none;
+        --w: 3px;
+        --h: 6px;
+        --br: 0 2px 1px 0;
+        --t: 3px;
+        --l: 3px;
+        border-top: 1px solid var(--pencil-top);
+        border-right: 1px solid var(--pencil-top);
+      }
     }
-    &:hover {
-        --cx: 2px;
-        --bg: var(--background-hover);
-        --fx: -40px;
-        --fr: -60deg;
-        --fd: .15s;
-        --fds: 0s;
-        --pbx: 3px;
-        --pby: -3px;
-        --pbd: .15s;
-        --pex: -24px;
-    }
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--color);
+    transform-origin: 9px 1px;
+    transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+    top: 26px;
+    right: 16px;
+    transition: transform 0.3s;
+  }
+  &:after {
+    --r: 45deg;
+  }
+  &:hover {
+    --cx: 2px;
+    --bg: var(--background-hover);
+    --fx: -40px;
+    --fr: -60deg;
+    --fd: 0.15s;
+    --fds: 0s;
+    --pbx: 3px;
+    --pby: -3px;
+    --pbd: 0.15s;
+    --pex: -24px;
+  }
 }

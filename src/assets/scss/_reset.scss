@@ -1,131 +1,203 @@
-*,html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6,a{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import "responsive";
 
-    &:focus{
-        outline: none !important;
-    }
+*,
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
+
+  &:focus {
+    outline: none !important;
+  }
 }
 
 :root {
-    overflow-x: hidden;
-    overflow-y: visible;
-    background-color: $background-light;
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    font-size: 62.5%;   /* 1rem = 10px => facile à calculer !! */
-    content-visibility: auto;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-color: $background-light;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 62.5%; /* 1rem = 10px => facile à calculer !! */
+  content-visibility: auto;
+  -webkit-font-smoothing: antialiased;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    width: 30rem;
+    height: 20rem;
+    z-index: 0;
+    pointer-events: none;
+    background: url("https://www.arnaud-tessier.fr/img/AT-bg.png") top left/100%
+      100% no-repeat;
+  }
 }
 
-html,body{
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    color: $dark;
-    scroll-behavior: smooth;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-size: 100%;
-    font-weight: 700;
-    margin: 1rem 0;
-}
-
-h1{
-    color: $text-white;
-    font-size: 4.5rem;
-    text-shadow: $text-shadow;
-    text-align: center;
-}
-
-h2{
-    color: $dark-blue;
-    font-size: 3rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    padding: 2rem 0;
-    text-align: center;
-    text-shadow: 2px 2px 2px $text-white;
-}
-
-h4{
-    font-size: 1.6rem;
-}
-
-h6{
-    font-size: 1.3rem;
-}
-
-p{
-    font-family: 'Arial', sans-serif;
-    margin: 1rem 0;
-    color: $dark;
-    font-size: 1.2rem;
-}
-
-a{
-    font-size: 1.4rem;
-    text-align: center;
-    color: $dark;
-    text-decoration: none;
-    cursor: pointer;
-    &:hover{
-        text-decoration: none;
-        opacity: 1;
+@include md {
+  :root {
+    &::after {
+      top: 100px;
     }
+  }
 }
 
-ul{
-    list-style:none;
+@include sm {
+  :root {
+    &::after {
+      top: 115px;
+    }
+  }
 }
 
-button{
-    cursor: pointer;
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: $dark;
+  scroll-behavior: smooth;
 }
 
-button,input,select,textarea{
-    margin:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 700;
+  margin: 1rem 0;
 }
 
-*,*::before,*::after{
-    box-sizing:inherit;
+h1 {
+  color: $text-white;
+  font-size: 4.5rem;
+  text-shadow: $text-shadow;
+  text-align: center;
 }
 
-img,video{
-    height: auto;
-    max-width: 100%;
+h2 {
+  color: $dark-blue;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  text-align: center;
+  text-shadow: 2px 2px 2px $text-white;
 }
 
-iframe{
-    border:0;
+h4 {
+  font-size: 1.6rem;
 }
 
-table{
-    border-collapse:collapse;
-    border-spacing:0;
+h6 {
+  font-size: 1.3rem;
 }
 
-td,th{
-    padding:0;
+p {
+  font-family: "Arial", sans-serif;
+  margin: 1rem 0;
+  color: $dark;
+  font-size: 1.2rem;
 }
 
-td:not([align]),th:not([align]){
-    text-align:left;
+a {
+  font-size: 1.4rem;
+  text-align: center;
+  color: $dark;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
 }
 
 ::placeholder {
-    color: $secondary-text;
-    font-style: italic;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+  color: $secondary-text;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
-.container{
-    margin: auto;
+.container {
+  margin: auto;
 }

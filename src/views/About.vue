@@ -1,5 +1,8 @@
 <template>
-  <div class="d-flex flex-row justify-content-center align-items-center p-5 abt-xs" style="padding-bottom: 3rem">
+  <div
+    class="d-flex flex-row justify-content-center align-items-center p-5 abt-xs"
+    style="padding-bottom: 3rem; z-index:2"
+  >
     <div class="about">
       <div class="resume">
         <h4>EXPÉRIENCES</h4>
@@ -10,34 +13,39 @@
             <template slot="header">
               <h6>09.2020 <span class="arrow">&#x21FE;</span> ...</h6>
               <p>
-                <span class="italic"><b>FREELANCE</b></span>, Développeur Web Front-End,
-                Bordeaux, France.
+                <span class="italic"><b>FREELANCE</b></span
+                >, Développeur Web Front-End, Bordeaux, France.
               </p>
               <p>
                 Réalisation de sites web.
               </p>
-              <div class="down"><i class="fas fa-angle-down"></i></div>
+              <div class="down">
+                <i class="fas fa-angle-down" data-cursor-hover></i>
+              </div>
             </template>
             <template slot="content">
               <p class="p2">
-                Création de sites web responsives de types CV, Portflolio, Vitrine avec JavaScript (Vue.js) ou e-commerce avec WordPress.
+                Création de sites web responsives de types CV, Portflolio,
+                Vitrine avec JavaScript (Vue.js) ou e-commerce avec WordPress.
               </p>
             </template>
           </badger-accordion-item>
         </badger-accordion>
-        
+
         <badger-accordion>
           <badger-accordion-item>
             <template slot="header">
               <h6>09.2018 <span class="arrow">&#x21FE;</span> 12.2019</h6>
               <p>
-                <span class="italic"><b>LUCINE</b></span>, Chargé de Recherche,
-                Bordeaux, France.
+                <span class="italic"><b>LUCINE</b></span
+                >, Chargé de Recherche, Bordeaux, France.
               </p>
               <p>
                 Soulagement de la douleur chronique par Réalité Virtuelle (DTx).
               </p>
-              <div class="down"><i class="fas fa-angle-down"></i></div>
+              <div class="down">
+                <i class="fas fa-angle-down" data-cursor-hover></i>
+              </div>
             </template>
             <template slot="content">
               <p class="p2">
@@ -54,14 +62,16 @@
             <template slot="header">
               <h6>02.2018 <span class="arrow">&#x21FE;</span> 03.2018</h6>
               <p>
-                <span class="italic"><b>AELIS FARMA</b></span>, Assistant Chef de
-                Projet, Bordeaux, France.
+                <span class="italic"><b>AELIS FARMA</b></span
+                >, Assistant Chef de Projet, Bordeaux, France.
               </p>
               <p>
                 Elaboration de nouveaux médicaments dérivés de la Prégnénolone
                 (endocannabinoïde).
               </p>
-              <div class="down"><i class="fas fa-angle-down"></i></div>
+              <div class="down">
+                <i class="fas fa-angle-down" data-cursor-hover></i>
+              </div>
             </template>
             <template slot="content">
               <p class="p2">
@@ -77,11 +87,13 @@
             <template slot="header">
               <h6>01.2012 <span class="arrow">&#x21FE;</span> 02.2018</h6>
               <p>
-                <span class="italic"><b>CH CHARLES PERRENS</b></span>, Ingénieur de
-                Recherche, Bordeaux, France.
+                <span class="italic"><b>CH CHARLES PERRENS</b></span
+                >, Ingénieur de Recherche, Bordeaux, France.
               </p>
               <p>Recherches cliniques sur la Schizophrénie.</p>
-              <div class="down"><i class="fas fa-angle-down"></i></div>
+              <div class="down">
+                <i class="fas fa-angle-down" data-cursor-hover></i>
+              </div>
             </template>
             <template slot="content">
               <p class="p2">
@@ -110,6 +122,7 @@
             data-loading="document-download"
             data-disable="document-download"
             aria-pressed="false"
+            data-cursor-hover
           >
             <button class="continue-application">
               <div>
@@ -133,7 +146,11 @@
       <div class="portrait">
         <h4>PORTRAIT</h4>
         <br />
-        <img src="@/assets/img/about-portrait-arnaud-tessier.jpg" alt="Arnaud TESSIER" class="shadow"/>
+        <img
+          src="@/assets/img/about-portrait-arnaud-tessier.jpg"
+          alt="Arnaud TESSIER"
+          class="shadow"
+        />
         <div class="portrait-red">
           <ul>
             <li>Né en 1990</li>
@@ -188,13 +205,14 @@ export default {
   name: "About",
   components: {
     BadgerAccordion,
-    BadgerAccordionItem
-  }
+    BadgerAccordionItem,
+  },
 };
 </script>
 
 <style lang="scss">
 @import "../../src/assets/scss/style.main.scss";
+@import "../../src/assets/scss/_cursor.scss";
 
 p,
 h6,
@@ -209,7 +227,6 @@ h4 {
 .down {
   text-align: right;
   right: 0;
-  cursor: pointer;
   z-index: 99;
 
   .fas {
@@ -225,7 +242,6 @@ h4 {
   .badger-accordion-toggle
   .badger-accordion-title {
   flex: 0 0 100%;
-  cursor: pointer;
   text-align: left;
 
   &:hover {
@@ -239,7 +255,7 @@ h4 {
   margin-bottom: 0.5rem;
   padding: 0 0.5rem;
 
-  h6{
+  h6 {
     margin: 0.5rem 0;
   }
 
@@ -249,7 +265,6 @@ h4 {
 
   &:hover,
   &:active {
-    cursor: pointer;
     outline: none;
 
     .badger-accordion__trigger-title {
@@ -355,7 +370,6 @@ p {
       flex: 0 0 80%;
       max-width: 80%;
       padding: 0 5rem 0 8rem;
-      cursor: default;
       transition: 0.35s ease-out;
       margin-bottom: 0;
     }
@@ -545,7 +559,7 @@ p {
   }
 }
 @include xs {
-  .abt-xs{
+  .abt-xs {
     overflow-x: hidden;
   }
   .portrait-red {

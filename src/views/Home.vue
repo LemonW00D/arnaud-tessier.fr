@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page" style="padding-bottom: 3rem">
+  <div class="home-page" style="padding-bottom: 3rem; z-index:2">
     <div class="yellow-bg"></div>
     <div class="home">
       <div class="typer-block animate__animated animate__bounceInLeft">
@@ -39,7 +39,7 @@
               </symbol>
             </defs>
           </svg>
-          <router-link to="/contact" class="contact-button">
+          <router-link to="/contact" class="contact-button" data-cursor-hover>
             Contact
             <svg class="icon icon-paperplane">
               <use xlink:href="#icon-paperplane"></use>
@@ -51,13 +51,19 @@
       <div
         class="d-flex flex-row justify-content-center align-items-center img-portrait animate__animated animate__bounceInRight"
       >
-        <img src="@/assets/img/home-portrait-arnaud-tessier.jpg" alt="Arnaud TESSIER" />
+        <img
+          src="@/assets/img/home-portrait-arnaud-tessier.jpg"
+          alt="Arnaud TESSIER"
+        />
       </div>
     </div>
     <div
       class="d-flex flex-row justify-content-center align-items-end img-pt-xs animate__animated animate__bounceInRight"
     >
-      <img src="@/assets/img/home-portrait-arnaud-tessier.jpg" alt="Arnaud TESSIER" />
+      <img
+        src="@/assets/img/home-portrait-arnaud-tessier.jpg"
+        alt="Arnaud TESSIER"
+      />
     </div>
   </div>
 </template>
@@ -68,22 +74,22 @@ import { VueTyper } from "vue-typer";
 export default {
   name: "Home",
   components: {
-    VueTyper
+    VueTyper,
   },
   data() {
     return {
       english: [
         `Hi,
 I'm Arnaud,
-Front-End developer !`
+Front-End developer !`,
       ],
       francais: [
         `Salut,
 Je suis Arnaud,
-développeur Front-End !`
-      ]
+développeur Front-End !`,
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -386,10 +392,10 @@ développeur Front-End !`
 }
 
 @include xs {
-  .home-page{
+  .home-page {
     overflow-x: hidden;
   }
-  .home {    
+  .home {
     overflow-x: hidden;
     span {
       font-size: 2.25rem;
